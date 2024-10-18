@@ -1,0 +1,106 @@
+数据概要
+serveroverview  服务器概况
+dailysummary    每日汇总
+
+
+充值数据
+rechargelist  充值列表
+rechargeanalysis.html  充值统计
+rechargeeveryhour.html 每小时充值
+rechargegradient       充值梯度
+rechargesummary        充值排行
+
+在线数据
+
+currentonline.html 当前在线
+
+在线分析
+onlinedistribution 在线分布
+onlinechange    在线变化
+onlinelength 在线时长分布
+
+
+
+用户信息
+rolelist.html 角色列表
+
+
+留存数据
+
+totalretention.html总体存留
+creatingsteps.html  创建步骤
+gradedistribution.html 等级分布
+timelength.html 时长分布
+taskdistribution  任务分布
+mapdistribution 地图分布
+
+
+活跃分析
+
+copyparticipation 副本参与
+activityparticipation活动参与度
+systemadvance.html 系统进阶分段
+
+
+
+消费分析3
+goldingot元宝去向
+consumptiongradient消费梯度
+
+
+数据汇总
+datadailysummary每日汇总
+datarechargesum充值汇总
+rechargecomparison.html充值对比
+dailyreport 每日报表
+monthlyreport 每月报表
+
+
+
+
+运营功能
+playerquery.html  玩家查询
+announcementlist  系统公告--公告列表
+announcement      系统公告--发公告
+mailinglist       邮件管理--邮件列表
+sendemails.html   邮件管理--发邮件
+nopassword        无密码登录
+closureslist.html 账号封禁--封禁列表
+noaccount         账号封禁--封号
+inneraccountlist.html 内部账号管理--内部账号列表
+addinternalaccount    内部账号管理--添加内部账号列表
+rebateslist          元宝申请------返利发放列表
+rebate               元宝申请------发返利
+releaserecords       元宝申请------内部账号发放记录
+applyforgold        元宝申请------内部账号元宝申请
+serverlist          开服申请---区服列表
+serviceapplica      开服申请---开服申请
+reject-pop          驳回记录(弹窗)
+combinedservice     合服申请
+
+
+
+服务器管理
+
+regionalclothinglist.html   区服列表
+serviceinfor-pop.html       区服信息（弹窗）
+applyprocessing             开服申请处理
+seropen-pop                 区服开启时间(弹窗）
+suitapplication             合服申请处理
+stopservicelist.html        停服列表
+stopservice.html            停服
+stopservice-pop             确认停服（弹窗）
+computerroomlist.html       机房管理-机房列表
+addcomputer                 机房管理-添加机房
+machinelist.html            机器管理-机器列表
+addmachine.html             机器管理-添加机器
+allocationlist.html         添加配置单（弹窗）
+
+
+
+
+监控系统
+chatmonitoring.html          聊天监控    
+bannedlist.html              封禁列表（弹窗） 
+lexicon.html                 敏感词库（弹窗）         
+

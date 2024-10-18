@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="renderer" content="webkit">
+<title>机房列表</title>
+<meta name="keywords" content="">
+<meta name="description" content="">
+<!--全局样式-->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<link href="css/screen.css" rel="stylesheet">
+<!--图标-->
+<link href="css/font-awesome.min.css" rel="stylesheet">
+<!--表单表格-->
+<link href="js/bootstrap-table/bootstrap-table.min.css" rel="stylesheet">
+<link href="css/form.css" rel="stylesheet">
+<!--日期-->
+<link href="js/date/daterangepicker.css" rel="stylesheet">
+<!--mobile 样式-->
+<link href="css/mobile.css" rel="stylesheet">
+<!--[if lt IE 9]>
+<meta http-equiv="refresh" content="0;ie.html" />
+<script src="js/html5shiv.min.js"></script>
+<script src="js/respond.min.js"></script>
+<![endif]-->
+</head>
+<body class="form-body">
+<div class="form-wrapper" style="padding-top: 0">
+	<ul class="list-inline page-tab clearfix">
+    <li class="cur"><a href="machinelist.html">机器列表</a><em></em></li>
+    <li><a href="addmachine.html">添加机器</a><em></em></li>
+</ul>
+<div class="form-item">
+<p class="popover-options">
+	<a href="#" type="button" data-placement="bottom" data-trigger="hover" 
+	   data-container="body" data-toggle="popover" data-content="
+		<p><em>刷新时间：</em>实时</p>
+		<p><em>付费ARPU：</em>总付费金额/总付费人数</p>
+		<p><em>付费ARPU：</em>总付费金额/总付费人数</p>
+		<p><em>付费ARPU：</em>总付费金额/总付费人数</p>
+		<p><em>付费ARPU：</em>总付费金额/总付费人数</p>
+		">
+		<i class="fa fa-question-circle" aria-hidden="true"></i>
+	</a>
+</p>
+<form class="form-inline clearfix" role="form"> 
+	<div class="form-group">
+		 <label class="control-label">机器名称：</label>
+		 <input type="text" class="form-control">
+	</div>	
+	<div class="form-group">
+		 <label class="control-label">所属机房：</label>
+		 <input type="text" class="form-control">
+	</div>
+	<button class="btn btn-info m-l" type="button"> 查询</button>	
+</form>
+</div>	
+<div class="table-wrap">
+    <table  data-toggle="table" class="table-item2 table">
+    <thead>
+        <tr>
+            <th>机器ID</th>
+            <th>机器名称</th>
+            <th>所属机房</th>
+            <th>IP</th>
+            <th>域名</th>
+            <th>最大开服数</th>
+            <th data-width="40%">配置</th>
+            <th>操作</th>
+            </tr>
+        </thead>
+        <tbody>                                  
+        <tr>
+        <td>1001</td>
+        <td>爱奇艺</td>
+        <td>浙江省杭州市</td>
+        <td>192.168.111.111</td>
+        <td>m1.qijue.menle.com.cn</td>
+        <td>23/27</td>
+        <td></td>
+        <td><a href="">[修改]</a></td>
+         </tr>
+
+        <tr>
+        <td>1001</td>
+        <td>爱奇艺</td>
+        <td>浙江省杭州市</td>
+        <td>192.168.111.111</td>
+        <td>m1.qijue.menle.com.cn</td>
+        <td>23/27</td>
+        <td></td>
+        <td><a href="">[修改]</a></td>
+         </tr>      
+        </tbody>
+    </table>
+</div>
+<div class="page-bottom clearfix">
+
+<div class="pull-right pagination">
+<span class="page-list">每页显示 
+	<span class="btn-group dropup">
+		<button type="button" class="btn btn-default  btn-outline dropdown-toggle" data-toggle="dropdown">
+			<span class="page-size">10</span> 
+			<span class="caret"></span>
+		</button>
+		<ul class="dropdown-menu" role="menu">
+			<li class="active">
+				<a href="javascript:void(0)">10</a>
+			</li>
+			<li>
+				<a href="javascript:void(0)">25</a>
+			</li>
+		</ul>
+	</span> 
+条</span>
+<ul class="pagination pagination-outline">
+    <li class="page-pre"><a href="javascript:void(0)">&laquo;</a></li>
+    <li class="page-number active"><a href="javascript:void(0)">1</a></li>
+    <li class="page-number"><a href="javascript:void(0)">2</a></li>
+    <li class="page-next"><a href="javascript:void(0)">&raquo;</a></li>
+</ul>
+<input class="form-control jump-page" size="2" maxlength="7" type="text" style="width: 40px;">
+<a href="" style="margin-right: 10px;">跳转</a>
+</div>
+</div>
+
+ </div>
+<!-- 全局js -->
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<!-- Bootstrap table -->
+<script src="js/bootstrap-table/bootstrap-table.min.js"></script>
+<script src="js/bootstrap-table/locale/bootstrap-table-zh-CN.min.js"></script>
+<script src="js/table-demo.js"></script>
+<script type="text/javascript">
+$(function () { $(".popover-options a").popover({
+		html : true 
+	});});
+
+</script>
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="renderer" content="webkit">
+<title>封禁列表</title>
+<meta name="keywords" content="">
+<meta name="description" content="">
+<!--全局样式-->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<link href="css/screen.css" rel="stylesheet">
+<!--图标-->
+<link href="css/font-awesome.min.css" rel="stylesheet">
+<!--表单表格-->
+<link href="js/bootstrap-table/bootstrap-table.min.css" rel="stylesheet">
+<link href="css/form.css" rel="stylesheet">
+<!--日期-->
+<link href="js/date/daterangepicker.css" rel="stylesheet">
+<!--mobile 样式-->
+<link href="css/mobile.css" rel="stylesheet">
+<!--[if lt IE 9]>
+<meta http-equiv="refresh" content="0;ie.html" />
+<script src="js/html5shiv.min.js"></script>
+<script src="js/respond.min.js"></script>
+<![endif]-->
+</head>
+<body class="form-body">
+<div class="form-wrapper" style="padding: 10px">
+<div class="form-item">
+<form class="form-inline clearfix" role="form"> 
+    <div class="form-group">
+        <label class="control-label m-l-xs">角色名：</label>
+       <input type="text" class="form-control">
+    </div>
+	<div class="form-group">
+		<label class="control-label">封禁状态：</label>
+        <select class="form-control">
+        <option value="" selected=""></option>
+        <option value="1"></option>
+        </select>
+	</div>	
+	<button class="btn btn-info m-l" type="button"> 查询</button>	
+</form>
+</div>	
+
+<div class="table-wrap">
+    <table  data-toggle="table" class="table-item table">
+    <thead>
+        <tr>
+            <th>角色名</th>
+            <th>封禁状态</th>
+            <th>有效时间</th>
+            <th>操作</th>
+            </tr>
+        </thead>
+        <tbody>                                  
+        <tr>
+         <td>s1.拉人号</td>
+         <td></td>
+         <td></td>
+         <td><a href="">解除</a></td>
+         </tr>
+       
+
+        </tbody>
+    </table>
+</div>
+<div class="page-bottom clearfix">
+<div class="pull-right pagination">
+<span class="page-list">每页显示 
+	<span class="btn-group dropup">
+		<button type="button" class="btn btn-default  btn-outline dropdown-toggle" data-toggle="dropdown">
+			<span class="page-size">10</span> 
+			<span class="caret"></span>
+		</button>
+		<ul class="dropdown-menu" role="menu">
+			<li class="active">
+				<a href="javascript:void(0)">10</a>
+			</li>
+			<li>
+				<a href="javascript:void(0)">25</a>
+			</li>
+		</ul>
+	</span> 
+条</span>
+<ul class="pagination pagination-outline">
+    <li class="page-pre"><a href="javascript:void(0)">&laquo;</a></li>
+    <li class="page-number active"><a href="javascript:void(0)">1</a></li>
+    <li class="page-number"><a href="javascript:void(0)">2</a></li>
+    <li class="page-next"><a href="javascript:void(0)">&raquo;</a></li>
+</ul>
+<input class="form-control jump-page" size="2" maxlength="7" type="text" style="width: 40px;">
+<a href="" style="margin-right: 10px;">跳转</a>
+</div>
+</div>
+ </div>
+<!-- 全局js -->
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<!-- Bootstrap table -->
+<script src="js/bootstrap-table/bootstrap-table.min.js"></script>
+<script src="js/bootstrap-table/locale/bootstrap-table-zh-CN.min.js"></script>
+<script src="js/table-demo.js"></script>
+<!--日期-->
+<script type="text/javascript" src="js/date/moment.min.js"></script> 
+<script type="text/javascript" src="js/date/jquery.daterangepicker.js"></script>
+</body>
+</html>

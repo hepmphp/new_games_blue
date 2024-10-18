@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="renderer" content="webkit">
+<title>每日报表</title>
+<meta name="keywords" content="">
+<meta name="description" content="">
+
+<!--全局样式-->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<link href="css/screen.css" rel="stylesheet">
+<!--图标-->
+<link href="css/font-awesome.min.css" rel="stylesheet">
+<!--表单表格-->
+<link href="js/bootstrap-table/bootstrap-table.min.css" rel="stylesheet">
+<link href="css/form.css" rel="stylesheet">
+<link href="css/gard.css" rel="stylesheet">
+<!--日期-->
+<link href="js/date/daterangepicker.css" rel="stylesheet">
+<!--mobile 样式-->
+<link href="css/mobile.css" rel="stylesheet">
+<!--[if lt IE 9]>
+<meta http-equiv="refresh" content="0;ie.html" />
+<script src="js/html5shiv.min.js"></script>
+<script src="js/respond.min.js"></script>
+<![endif]-->
+</head>
+<body class="form-body">
+  <div class="form-wrapper">
+<div class="form-item">
+<form class="form-inline clearfix" role="form"> 
+    <div class="form-group">
+        <label class="control-label">平台：</label>
+        <select class="form-control">
+        <option value="" selected=""></option>
+        <option value="1"></option>
+        </select>
+    </div> 
+    <div class="form-group">
+        <label class="control-label">区服类型：</label>
+        <select class="form-control">
+        <option value="" selected=""></option>
+        <option value="1"></option>
+        </select>
+    </div> 
+    <div class="form-group">
+        <label class="control-label">区服名称：</label>
+       <input type="text" name="" class="form-control">
+    </div>
+    <div class="form-group">
+        <label class="control-label">状态：</label>
+        <select class="form-control">
+        <option value="" selected=""></option>
+        <option value="1"></option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label class="control-label">所属机房：</label>
+        <select class="form-control">
+        <option value="" selected=""></option>
+        <option value="1"></option>
+        </select>
+    </div>
+	<div class="form-group">
+		<label class="control-label">开启时间：</label>
+		<span class="date-range">
+		<input placeholder="开始时间" class="form-control date-range00 date-ico" type="text">
+		<input placeholder="结束时间" class="form-control date-range01 date-ico" type="text">
+		</span>
+	</div>	
+	<button class="btn btn-info m-l" type="button"> 查询</button>	
+</form>
+<p class="popover-options">
+	<a href="#" type="button" data-placement="bottom" data-trigger="hover" 
+	   data-container="body" data-toggle="popover" data-content="
+		<p><em>刷新时间：</em>实时</p>
+		<p><em>付费ARPU：</em>总付费金额/总付费人数</p>
+		<p><em>付费ARPU：</em>总付费金额/总付费人数</p>
+		<p><em>付费ARPU：</em>总付费金额/总付费人数</p>
+		<p><em>付费ARPU：</em>总付费金额/总付费人数</p>
+		">
+		<i class="fa fa-question-circle" aria-hidden="true"></i>
+	</a>
+</p>
+</div>	
+<div class="table-wrap" style="border:0px;">
+<div class="table-head">
+        <div class="table-head-wrap">
+            <table class="grid">
+                <colgroup>
+                    <col style="width:90px">
+                    <col>
+                    <col>
+                </colgroup>
+                <thead>
+                <tr>
+                	<th><span class="tab-link"><input type="checkbox"></span></th>
+                     <th>
+                        <span class="tab-link">区服ID</span>
+                    </th>                   
+                      <th>
+                        <span class="tab-link">区服编号</span>
+                    </th>
+                    <th>
+                        <span class="tab-link">区服名称</span>
+                    </th>
+                    <th>
+                        <span class="tab-link">平台</span>
+                    </th>
+                     <th>
+                        <span class="tab-link">所属机房</span>
+                    </th>
+                    <th>
+                        <span class="tab-link">所属机器</span>
+                    </th>
+                    <th>
+                        <span class="tab-link">服务器端口</span>
+                    </th> 
+                    <th>
+                        <span class="tab-link">状态</span>
+                    </th>
+                     <th>
+                        <span class="tab-link">开启时间</span>
+                    </th>
+                     <th>
+                        <span class="tab-link">操作</span>
+                    </th>                                                                       
+                </tr>
+                </thead>
+            </table>
+        </div>
+    </div>
+<div class="table-content grid-tbody regional-table">
+        <table class="grid">
+            <colgroup>
+                <col style="width:90px">
+                <col>
+                <col>
+            </colgroup>
+            <tbody>
+
+              <tr style="border-bottom: none;">
+                <td colspan="11" style="padding: 0">
+                <div class="table-content-tree" style="overflow: hidden;">
+                <table class="grid">
+                <colgroup>
+                    <col style="width:90px">
+                    <col>
+                    <col>
+                </colgroup>
+                <tbody>
+                <tr class="tp">
+                	<td><div><input type="checkbox"></div></td>
+                    <td><div>1001</div></td>
+                    <td><div>s.1</div></td>
+                    <td><div>正式1服</div></td>
+                    <td><div>萌乐</div></td>
+                    <td><div>机房1</div></td>
+                    <td><div>m1（3/10）</div></td>
+                    <td><div>10001-3306</div></td>
+                    <td><div>维护</div></td>
+                    <td><div>2017-04-20 12:00:00</div></td>
+                    <td><div><a href="javascript:void(0)" onclick="serviceinfor();">[修改]</a><a href="">[开启]</a><a href="">[停服]</a></div></td>
+                </tr>                                               
+                </tbody>
+              </table>
+              </div>
+               </td>
+            </tr>
+
+
+              <tr style="border-bottom: none;">
+                <td colspan="11" style="padding: 0">
+                <div class="table-content-tree" style="overflow: hidden;">
+                <table class="grid">
+                <colgroup>
+                    <col style="width:90px">
+                    <col>
+                    <col>
+                </colgroup>
+                <tbody>
+                <tr class="tp">
+                	<td><div><input type="checkbox"></div></td>
+                    <td><div>1001</div></td>
+                    <td><div>s.1</div></td>
+                    <td class="togg"><div>正式1服<i class="fa fa-sort-down"></i></div></td>
+                    <td><div>萌乐</div></td>
+                    <td><div>机房1</div></td>
+                    <td><div>m1（3/10）</div></td>
+                    <td><div>10001-3306</div></td>
+                    <td><div>维护</div></td>
+                    <td><div>2017-04-20 12:00:00</div></td>
+                    <td><div><a href="javascript:void(0)" onclick="serviceinfor();">[修改]</a><a href="">[开启]</a><a href="">[停服]</a></div></td>
+                </tr>
+                <tr class="bm">
+                	<td><div></div></td>
+                    <td><div>1001</div></td>
+                    <td><div>s.1</div></td>
+                    <td><div>正式1服</div></td>
+                    <td><div>萌乐</div></td>
+                    <td><div>机房1</div></td>
+                    <td><div>m1（3/10）</div></td>
+                    <td><div>10001-3306</div></td>
+                    <td><div>维护</div></td>
+                    <td><div>2017-04-20 12:00:00</div></td>
+                    <td><div><a href="javascript:void(0)" onclick="serviceinfor();">[修改]</a><a href="">[开启]</a><a href="">[停服]</a></div></td>
+                </tr>
+                                                
+                </tbody>
+              </table>
+              </div>
+               </td>
+            </tr>
+
+
+              <tr style="border-bottom: none;">
+                <td colspan="11" style="padding: 0">
+                <div class="table-content-tree" style="overflow: hidden;">
+                <table class="grid">
+                <colgroup>
+                    <col style="width:90px">
+                    <col>
+                    <col>
+                </colgroup>
+                <tbody>
+                <tr class="tp">
+                	<td><div><input type="checkbox"></div></td>
+                    <td><div>1001</div></td>
+                    <td><div>s.1</div></td>
+                    <td class="togg"><div>正式1服<i class="fa fa-sort-down"></i></div></td>
+                    <td><div>萌乐</div></td>
+                    <td><div>机房1</div></td>
+                    <td><div>m1（3/10）</div></td>
+                    <td><div>10001-3306</div></td>
+                    <td><div>维护</div></td>
+                    <td><div>2017-04-20 12:00:00</div></td>
+                    <td><div><a href="javascript:void(0)" onclick="serviceinfor();">[修改]</a><a href="">[开启]</a><a href="">[停服]</a></div></td>
+                </tr>
+                <tr class="bm">
+                	<td><div></div></td>
+                    <td><div>1001</div></td>
+                    <td><div>s.1</div></td>
+                    <td><div>正式1服</div></td>
+                    <td><div>萌乐</div></td>
+                    <td><div>机房1</div></td>
+                    <td><div>m1（3/10）</div></td>
+                    <td><div>10001-3306</div></td>
+                    <td><div>维护</div></td>
+                    <td><div>2017-04-20 12:00:00</div></td>
+                    <td><div><a href="javascript:void(0)" onclick="serviceinfor();">[修改]</a><a href="">[开启]</a><a href="">[停服]</a></div></td>
+                </tr>
+                <tr class="bm">
+                	<td><div></div></td>
+                    <td><div>1001</div></td>
+                    <td><div>s.1</div></td>
+                    <td><div>正式1服</div></td>
+                    <td><div>萌乐</div></td>
+                    <td><div>机房1</div></td>
+                    <td><div>m1（3/10）</div></td>
+                    <td><div>10001-3306</div></td>
+                    <td><div>维护</div></td>
+                    <td><div>2017-04-20 12:00:00</div></td>
+                    <td><div><a href="javascript:void(0)" onclick="serviceinfor();">[修改]</a><a href="">[开启]</a><a href="">[停服]</a></div></td>
+                </tr>
+                <tr class="bm">
+                	<td><div></div></td>
+                    <td><div>1001</div></td>
+                    <td><div>s.1</div></td>
+                    <td><div>正式1服</div></td>
+                    <td><div>萌乐</div></td>
+                    <td><div>机房1</div></td>
+                    <td><div>m1（3/10）</div></td>
+                    <td><div>10001-3306</div></td>
+                    <td><div>维护</div></td>
+                    <td><div>2017-04-20 12:00:00</div></td>
+                    <td><div><a href="javascript:void(0)" onclick="serviceinfor();">[修改]</a><a href="">[开启]</a><a href="">[停服]</a></div></td>
+                </tr>
+
+                </tbody>
+              </table>
+              </div>
+               </td>
+            </tr>
+
+
+
+
+
+
+            </tbody>
+        </table>
+
+</div>
+
+</div>
+<div class="page-bottom clearfix">
+<div class="pull-left pagination-detail">
+	<input type="checkbox" name="">全选/取消
+	<button type="button" class="btn btn-info btn-xs">批量维护</button>
+	<button type="button" class="btn btn-info btn-xs">批量停服</button>
+	<button type="button" class="btn btn-info btn-xs">批量开启</button>
+	<span style="color: #999">共计区服：122个</span>
+</div>
+<div class="pull-right pagination">
+<span class="page-list">每页显示 
+	<span class="btn-group dropup">
+		<button type="button" class="btn btn-default  btn-outline dropdown-toggle" data-toggle="dropdown">
+			<span class="page-size">10</span> 
+			<span class="caret"></span>
+		</button>
+		<ul class="dropdown-menu" role="menu">
+			<li class="active">
+				<a href="javascript:void(0)">10</a>
+			</li>
+			<li>
+				<a href="javascript:void(0)">25</a>
+			</li>
+		</ul>
+	</span> 
+条</span>
+<ul class="pagination pagination-outline">
+    <li class="page-pre"><a href="javascript:void(0)">&laquo;</a></li>
+    <li class="page-number active"><a href="javascript:void(0)">1</a></li>
+    <li class="page-number"><a href="javascript:void(0)">2</a></li>
+    <li class="page-next"><a href="javascript:void(0)">&raquo;</a></li>
+</ul>
+<input class="form-control jump-page" size="2" maxlength="7" type="text" style="width: 40px;">
+<a href="" style="margin-right: 10px;">跳转</a>
+</div>
+</div>
+
+ </div>
+<!-- 全局js -->
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<!--日期-->
+<script type="text/javascript" src="js/date/moment.min.js"></script> 
+<script type="text/javascript" src="js/date/jquery.daterangepicker.js"></script>
+<!--弹窗-->
+<script src="js/layer/layer.js"></script>
+<script type="text/javascript">
+ $('.date-range').dateRangePicker(
+{
+    separator : ' to ',
+     format: 'YYYY-MM-DD HH:mm:ss',
+     endDate: moment(),
+    getValue: function()
+    {
+
+        if ($('.date-range00').val() && $('.date-range01').val() )
+            return $('.date-range00').val() + ' 至 ' + $('.date-range01').val();
+        else
+            return '';
+    },
+    setValue: function(s,s1,s2)
+    {
+        $('.date-range00').val(s1);
+        $('.date-range01').val(s2);
+    },
+    time: {
+    enabled: true
+  },
+defaultTime: moment().subtract(1, 'month').startOf('month').startOf('day').toDate(),
+defaultEndTime: moment().endOf('day').toDate()
+});
+$(function () { $(".popover-options a").popover({
+		html : true 
+	})
+});
+$(".grid .togg").click(function(){
+    $(this).parent('.tp').siblings('.bm').toggle();
+    $(this).parents('.table-content-tree').toggleClass('achive');
+})
+$(".grid-tbody").height($(".form-wrapper").height()-150);
+$(window).resize(function(){
+$(".grid-tbody").height($(".form-wrapper").height()-150);
+})
+</script>
+ <script type="text/javascript">
+function serviceinfor() {
+    layer.open({
+    type: 2,
+    title: '区服信息',
+    shadeClose: true,
+    btn: ['确认修改'],
+    area : ['420px' , '480px'],
+    content: 'serviceinfor-pop.html'
+    });
+}
+</script>
+</body>
+</html>

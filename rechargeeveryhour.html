@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="renderer" content="webkit">
+<title>每小时充值</title>
+<meta name="keywords" content="">
+<meta name="description" content="">
+<!--全局样式-->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<link href="css/screen.css" rel="stylesheet">
+<!--图标-->
+<link href="css/font-awesome.min.css" rel="stylesheet">
+<!--表单表格-->
+<link href="js/bootstrap-table/bootstrap-table.min.css" rel="stylesheet">
+<link href="css/form.css" rel="stylesheet">
+<!--日期-->
+<link href="js/date/daterangepicker.css" rel="stylesheet">
+<!--mobile 样式-->
+<link href="css/mobile.css" rel="stylesheet">
+<!--[if lt IE 9]>
+<meta http-equiv="refresh" content="0;ie.html" />
+<script src="js/html5shiv.min.js"></script>
+<script src="js/respond.min.js"></script>
+<![endif]-->
+</head>
+<body class="form-body">
+<div class="form-wrapper" style="padding-top: 0">
+<ul class="list-inline page-tab clearfix">
+	<li><a href="rechargeanalysis.html">充值统计</a><em></em></li>
+	<li class="cur"><a href="rechargeeveryhour.html">每小时充值</a><em></em></li>
+	<li><a href="rechargegradient.html">充值梯度</a><em></em></li>
+	<li><a href="rechargesummary.html">充值排行</a><em></em></li>
+</ul>
+
+<div class="form-item">
+<form class="form-inline clearfix" role="form"> 
+	<div class="form-group">
+		<label class="control-label">发布时间：</label>
+	   <input type="text" class="form-control date-range date-ico" placeholder="时间">
+	</div>	
+	<button class="btn btn-info m-l" type="button"> 查询</button>	
+</form>
+<p class="popover-options">
+	<a href="#" type="button" data-placement="bottom" data-trigger="hover" 
+	   data-container="body" data-toggle="popover" data-content="
+		<p><em>刷新时间：</em>实时</p>
+		<p><em>付费ARPU：</em>总付费金额/总付费人数</p>
+		<p><em>付费ARPU：</em>总付费金额/总付费人数</p>
+		<p><em>付费ARPU：</em>总付费金额/总付费人数</p>
+		<p><em>付费ARPU：</em>总付费金额/总付费人数</p>
+		">
+		<i class="fa fa-question-circle" aria-hidden="true"></i>
+	</a>
+</p>
+</div>	
+
+
+
+
+ </div>
+<!-- 全局js -->
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<!-- Bootstrap table -->
+<script src="js/bootstrap-table/bootstrap-table.min.js"></script>
+<script src="js/bootstrap-table/locale/bootstrap-table-zh-CN.min.js"></script>
+<script src="js/table-demo.js"></script>
+<!--日期-->
+<script type="text/javascript" src="js/date/moment.min.js"></script> 
+<script type="text/javascript" src="js/date/jquery.daterangepicker.js"></script>
+<script type="text/javascript">
+    $('.date-range').dateRangePicker(
+    {
+        autoClose: true,
+        singleDate : true,
+        singleMonth: true,
+        showShortcuts: false,
+          startOfWeek: 'monday',
+        format: 'YYYY-MM-DD'
+    });
+$(function () { $(".popover-options a").popover({
+		html : true 
+	});});
+
+</script>
+</body>
+</html>

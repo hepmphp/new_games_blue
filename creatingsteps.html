@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="renderer" content="webkit">
+<title>创建步骤</title>
+<meta name="keywords" content="">
+<meta name="description" content="">
+<!--全局样式-->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<link href="css/screen.css" rel="stylesheet">
+<!--图标-->
+<link href="css/font-awesome.min.css" rel="stylesheet">
+<!--表单表格-->
+<link href="js/bootstrap-table/bootstrap-table.min.css" rel="stylesheet">
+<link href="css/form.css" rel="stylesheet">
+<!--日期-->
+<link href="js/date/daterangepicker.css" rel="stylesheet">
+<!--mobile 样式-->
+<link href="css/mobile.css" rel="stylesheet">
+<!--[if lt IE 9]>
+<meta http-equiv="refresh" content="0;ie.html" />
+<script src="js/html5shiv.min.js"></script>
+<script src="js/respond.min.js"></script>
+<![endif]-->
+</head>
+<body class="form-body">
+<div class="form-wrapper" style="padding-top: 0">
+<ul class="list-inline page-tab clearfix">
+	<li><a href="totalretention.html">总体存留</a></li>
+	<li class="cur"><a href="creatingsteps.html">创建步骤(流失)</a></li>
+	<li><a href="gradedistribution.html">等级分布(流失)</a></li>
+	<li><a href="timelength.html">时长分布(流失)</a></li>
+	<li><a href="taskdistribution.html">任务分布(流失)</a></li>
+	<li><a href="mapdistribution.html">地图分布(流失)</a></li>
+</ul>
+<div class="form-item">
+<form class="form-inline clearfix" role="form"> 
+	<div class="form-group">
+		<label class="control-label">时间：</label>
+		<span class="date-range">
+		<input placeholder="开始时间" class="form-control date-range00 date-ico" type="text">
+		<input placeholder="结束时间" class="form-control date-range01 date-ico" type="text">
+		</span>
+	</div>	
+	<button class="btn btn-info m-l" type="button"> 查询</button>	
+</form>
+<p class="popover-options">
+	<a href="#" type="button" data-placement="bottom" data-trigger="hover" 
+	   data-container="body" data-toggle="popover" data-content="
+		<p><em>刷新时间：</em>实时</p>
+		<p><em>付费ARPU：</em>总付费金额/总付费人数</p>
+		<p><em>付费ARPU：</em>总付费金额/总付费人数</p>
+		<p><em>付费ARPU：</em>总付费金额/总付费人数</p>
+		<p><em>付费ARPU：</em>总付费金额/总付费人数</p>
+		">
+		<i class="fa fa-question-circle" aria-hidden="true"></i>
+	</a>
+</p>
+</div>	
+<h1>各阶段人数情况</h1>
+<div class="table-wrap">
+    <table  data-toggle="table" class="table" data-height="90">
+    <thead>
+        <tr>
+            <th>平台导量跳转人数</th>
+            <th>到达创角页人数</th>
+            <th>创建角色人数</th>
+            <th>进入游戏页面人数</th>
+            <th>完成第一个任务人数</th>
+            </tr>
+        </thead>
+        <tbody>                                  
+        <tr>
+        <td>10000</td>
+        <td>10000</td>
+        <td>10000</td>
+        <td>10000</td>
+        <td>10000</td>
+         </tr>      
+
+        </tbody>
+    </table>
+</div>
+<h1>各阶段流失情况</h1>
+<div class="table-wrap">
+    <table  data-toggle="table" class="table" data-height="500">
+    <thead>
+        <tr>
+            <th>各步骤流失情况</th>
+            <th>上一步进入人数</th>
+            <th>完成人数</th>
+            <th>流失率</th>
+            <th>上一步进入IP</th>
+            <th>完成进入IP</th>
+            </tr>
+        </thead>
+        <tbody>                                  
+        <tr>
+        <td class="tdbg1">
+        	<p>导量跳转流失情况</p>
+        	<p>上一步：平台导量跳转</p>
+        	<p>完成：进入创角页</p>
+        </td>
+        <td>1000</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+         </tr>
+        <tr>
+        <td class="tdbg1">
+        	<p>导量跳转流失情况</p>
+        	<p>上一步：平台导量跳转</p>
+        	<p>完成：进入创角页</p>
+        </td>
+        <td>1000</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+         </tr>
+     
+
+        </tbody>
+    </table>
+</div>
+
+ </div>
+<!-- 全局js -->
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<!-- Bootstrap table -->
+<script src="js/bootstrap-table/bootstrap-table.min.js"></script>
+<script src="js/bootstrap-table/locale/bootstrap-table-zh-CN.min.js"></script>
+<script src="js/table-demo.js"></script>
+<!--日期-->
+<script type="text/javascript" src="js/date/moment.min.js"></script> 
+<script type="text/javascript" src="js/date/jquery.daterangepicker.js"></script>
+<script type="text/javascript">
+ $('.date-range').dateRangePicker(
+{
+    separator : ' to ',
+     format: 'YYYY-MM-DD HH:mm:ss',
+     endDate: moment(),
+    getValue: function()
+    {
+
+        if ($('.date-range00').val() && $('.date-range01').val() )
+            return $('.date-range00').val() + ' 至 ' + $('.date-range01').val();
+        else
+            return '';
+    },
+    setValue: function(s,s1,s2)
+    {
+        $('.date-range00').val(s1);
+        $('.date-range01').val(s2);
+    },
+    time: {
+    enabled: true
+  },
+defaultTime: moment().subtract(1, 'month').startOf('month').startOf('day').toDate(),
+defaultEndTime: moment().endOf('day').toDate()
+});
+$(function () { $(".popover-options a").popover({
+		html : true 
+	});});
+
+</script>
+</body>
+</html>

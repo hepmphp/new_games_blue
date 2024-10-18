@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="renderer" content="webkit">
+<title>数据汇总-充值汇总</title>
+<meta name="keywords" content="">
+<meta name="description" content="">
+<!--全局样式-->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<link href="css/screen.css" rel="stylesheet">
+<!--图标-->
+<link href="css/font-awesome.min.css" rel="stylesheet">
+<!--表单表格-->
+<link href="js/bootstrap-table/bootstrap-table.min.css" rel="stylesheet">
+<link href="css/form.css" rel="stylesheet">
+<!--日期-->
+<link href="js/date/daterangepicker.css" rel="stylesheet">
+<!--mobile 样式-->
+<link href="css/mobile.css" rel="stylesheet">
+<!--[if lt IE 9]>
+<meta http-equiv="refresh" content="0;ie.html" />
+<script src="js/html5shiv.min.js"></script>
+<script src="js/respond.min.js"></script>
+<![endif]-->
+</head>
+<body class="form-body">
+<div class="form-wrapper">
+<div class="form-item">
+<form class="form-inline clearfix" role="form"> 
+	<div class="form-group">
+		<label class="control-label">平台：</label>
+		<input class="form-control" type="text">
+	</div>
+	<div class="form-group">
+		<label class="control-label">区服：</label>
+        <input class="form-control" type="text">
+	</div>
+	<div class="form-group">
+		<label class="control-label">账号ID：</label>
+        <input class="form-control" type="text">
+	</div>	
+	<div class="form-group">
+		<label class="control-label">角色ID：</label>
+        <input class="form-control" type="text">
+	</div>	
+	<div class="form-group">
+		<label class="control-label">角色名：</label>
+        <input class="form-control" type="text">
+	</div>	
+	<button class="btn btn-info m-l" type="button"> 查询</button>	
+</form>
+<p class="popover-options">
+	<a href="#" type="button" data-placement="bottom" data-trigger="hover" 
+	   data-container="body" data-toggle="popover" data-content="
+		<p><em>刷新时间：</em>实时</p>
+		<p><em>付费ARPU：</em>总付费金额/总付费人数</p>
+		<p><em>付费ARPU：</em>总付费金额/总付费人数</p>
+		<p><em>付费ARPU：</em>总付费金额/总付费人数</p>
+		<p><em>付费ARPU：</em>总付费金额/总付费人数</p>
+		">
+		<i class="fa fa-question-circle" aria-hidden="true"></i>
+	</a>
+</p>
+</div>	
+	<h3 class="title-top">充值汇总
+	<div class="dropdown quick-query">
+	<button type="button" class="btn dropdown-toggle" id="dropdownMenu" 
+			data-toggle="dropdown">
+		快速查询工具
+		<span class="caret"></span>
+	</button>
+	<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
+		<li role="presentation">
+			<a role="menuitem" tabindex="-1" href="#">充值查询</a>
+		</li>
+		<li role="presentation">
+			<a role="menuitem" tabindex="-1" href="#">玩家日志查询</a>
+		</li>
+		<li role="presentation">
+			<a role="menuitem" tabindex="-1" href="#">玩家玩家日志查询</a>
+		</li>
+		<li role="presentation">
+			<a role="menuitem" tabindex="-1" href="#">xxx日志查询</a>
+		</li>
+	</ul>
+</div>
+	</h3>
+<h2 class="title"><i></i>基本信息</h2>
+<div class="table-wrap notable essential-infor" style="border: 0px solid transparent !important">
+    <table  data-toggle="table" data-height="140" data-show-header="false" class="nobor">
+        <thead><tr><th></th><th></th><th></th><th></th><th></th></tr></thead>
+        <tbody>                                  
+        <tr>
+        <td>平台：<b>萌乐网</b></td>
+        <td>战力：<b>10000</b></td>
+        <td>VIP等级：<b>10000</b></td>
+        <td>在线情况：<em>在线</em></td>
+        <td>创建时间和IP: <b>1990-01-01 12:00:00【江苏省苏州市,联通：112.81.15.24】</b></td>
+        </tr>
+         <tr>
+        <td>角色名：<b>10000</b></td>
+        <td>等级：<b>10000</b></td>
+        <td>总充值：<b>10000</b></td>
+        <td>账号状态：<strong>已禁言</strong></td>
+        <td>最近在线时间和IP：<b>1990-01-01 12:00:00【江苏省苏州市,联通：112.81.15.24】</b></td>
+        </tr>      
+        <tr>
+        <td>服务器：<b>10000</b></td>
+        <td>帮派：<b>10000</b></td>
+        <td>当前元宝：<b>10000</b></td>
+        <td>当前地图：<b>10000</b></td>
+        <td>总在线时长：<b>9999天24小时60分钟</b></td>
+        </tr>
+        <tr>
+        <td>角色ID：<b>123456789</b></td>
+        <td>性别：<b>10000</b></td>
+        <td>绑定元宝：<b>11111</b></td>
+        <td>当前坐标：<b>1214，3215</b></td>
+        <td>七日平均在线：<b>24小时60分钟</b></td>
+        </tr>
+        <tr>
+        <td>帐号ID：<b>123456789</b></td>
+        <td>当前经验：<b>0000000</b></td>
+        <td>当前银两：<b>000000</b></td>
+        <td></td>
+        <td></td>
+        </tr>      
+
+        </tbody>
+    </table>
+</div>
+<h2 class="title"><i></i>其他货币</h2>
+<div class="table-wrap">
+    <table  data-toggle="table" data-height="80" class="table">
+        <thead>
+        	<tr>
+        		<th>PK值</th>
+        		<th>侠义值</th>
+        		<th>成就值</th>
+        		<th>荣誉值</th>
+        		<th>声望值</th>
+        		<th>贡献值</th>
+        		<th>魅力值</th>
+        		<th>历练值</th>
+        	</tr>
+        </thead>
+        <tbody>                                  
+        <tr>
+        	<td>1</td>
+        	<td></td>
+        	<td></td>
+        	<td></td>
+        	<td></td>
+        	<td></td>
+        	<td></td>
+        	<td></td>
+        </tr>      
+
+        </tbody>
+    </table>
+</div>
+<h2 class="title"><i></i>进阶系统数据</h2>
+<div class="table-wrap">
+    <table  data-toggle="table" data-height="80" class="table">
+        <thead>
+        	<tr>
+        		<th>坐骑</th>
+        		<th>翅膀</th>
+        		<th>神兵</th>
+        		<th>灵宠</th>
+        		<th>法宝</th>
+        		<th></th>
+        		<th></th>
+        		<th></th>
+        		<th></th>
+        		<th></th>
+        		<th></th>
+        		<th></th>
+        	</tr>
+        </thead>
+        <tbody>                                  
+        <tr>
+				<td>1</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+        </tr>      
+
+        </tbody>
+    </table>
+</div>
+<h2 class="title"><i></i>拥有物品</h2>
+<div class="form-item">
+<div class="form-inline">
+	<div class="form-group">
+		<label class="control-label">容器：</label>
+        <select  class="form-control">
+        	<option value=""></option>
+        </select>
+	</div>	
+	<div class="form-group">
+		<label class="control-label">物品：</label>
+        <input class="form-control" type="text">
+	</div>		
+<button class="btn btn-info m-l" type="button"> 搜索</button>	
+</div>
+<p style="color: #333">
+	背包：4/10&nbsp;&nbsp;&nbsp;
+	仓库：3/10&nbsp;&nbsp;&nbsp;
+	摊位：1/10&nbsp;&nbsp;&nbsp;
+	共计数量：99999
+</p>
+</div>
+<div class="table-wrap table-violet">
+    <table  data-toggle="table" data-height="300" class="table">
+        <thead>
+        	<tr>
+        		<th>容器</th>
+        		<th>物品ID</th>
+        		<th>模版ID</th>
+        		<th>物品名</th>
+        		<th>品质</th>
+        		<th>数量</th>
+        		<th>强化等级</th>
+        		<th>品阶</th>
+        		<th>绑定状态</th>
+        		<th>位置</th>
+        	</tr>
+        </thead>
+        <tbody>                                  
+        <tr>
+				<td>背包</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+        </tr>      
+        <tr>
+				<td>背包</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+        </tr> 
+        </tbody>
+    </table>
+</div>
+
+ </div>
+<!-- 全局js -->
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<!-- Bootstrap table -->
+<script src="js/bootstrap-table/bootstrap-table.min.js"></script>
+<script src="js/bootstrap-table/locale/bootstrap-table-zh-CN.min.js"></script>
+<script src="js/table-demo.js"></script>
+<script type="text/javascript">
+$(function () { $(".popover-options a").popover({
+		html : true 
+	});});
+
+</script>
+</body>
+</html>

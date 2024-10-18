@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="renderer" content="webkit">
+<title>聊天监控</title>
+<meta name="keywords" content="">
+<meta name="description" content="">
+<!--全局样式-->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<link href="css/screen.css" rel="stylesheet">
+<!--图标-->
+<link href="css/font-awesome.min.css" rel="stylesheet">
+<!--表单表格-->
+<link href="js/bootstrap-table/bootstrap-table.min.css" rel="stylesheet">
+<link href="css/form.css" rel="stylesheet">
+<!--mobile 样式-->
+<link href="css/mobile.css" rel="stylesheet">
+<!--[if lt IE 9]>
+<meta http-equiv="refresh" content="0;ie.html" />
+<script src="js/html5shiv.min.js"></script>
+<script src="js/respond.min.js"></script>
+<![endif]-->
+</head>
+<body>
+	<div class="chat-box">
+		<h4>实时监控：</h4>
+		<div class="hd form-inline clearfix">
+			<label class="control-label" style="width: 65px;display: inline-block;">监控频道：</label> 
+			<select class="form-control" style="width: 150px;display: inline-block;">
+			<option value="">全部</option>
+		    </select>
+		    <button class="btn btn-sitive btn-xs" type="button" onclick="lexicon();"> 敏感词库</button>	
+		    <button class="btn btn-stop m-r-sm stop_sroll btn-xs" type="button"> 暂停滚动</button>
+		</div>
+		<div class="bm chat-record">
+		   	<div class="sroll_wrap">
+			<ul class="list-unstyled list-group">
+				<li>
+					<p class="channel">【队伍】s1.Jname</p>
+					<dl>
+						<dd>我说你站着赶什么，赶紧上来砍死他！！！</dd>
+						<dt><a href="" class="infor-achive follow">关注</a></dt>
+					</dl>
+				</li>
+				<li>
+					<p class="channel">【队伍】s1.Jname</p>
+					<dl>
+						<dd>星宿已经打到48关了可是第一个星纹还没有点亮这个星纹是关数随机给的还是按顺序给的？为何一直没有第一个星纹？哪位大佬知道啊，求指点！</dd>
+						<dt><a href="" class="infor-achive follow">关注</a></dt>
+					</dl>
+				</li>
+				<li>
+					<p class="channel">【队伍】s1.Jname</p>
+					<dl>
+						<dd>星宿已经打到48关了可是第一个星纹还没有点亮这个星纹是关数随机给的还是按顺序给的？为何一直没有第一个星纹？哪位大佬知道啊，求指点！<img src="images/u14077.png"></dd>
+						<dt><a href="" class="infor-achive follow">关注</a></dt>
+					</dl>
+				</li>
+				<li>
+					<p class="channel">【队伍】s1.Jname</p>
+					<dl>
+						<dd>我说你站着赶什么，赶紧上来砍死他！！！<img src="images/u14077.png"></dd>
+						<dt><a href="" class="sitive-achive follow">关注</a></dt>
+					</dl>
+				</li>	
+				<li>
+					<p class="channel">【队伍】s1.Jname</p>
+					<dl>
+						<dd>我说你站着赶什么，赶紧上来砍死他！！！<img src="images/u14077.png">我说你站着赶什么，赶紧上来砍死他！！！我说你站着赶什么，赶紧上来砍死他！！！我说你站着赶什么，赶紧上来砍死他！！！我说你站着赶什么，赶紧上来砍死他！！！我说你站着赶什么，赶紧上来砍死他！！！我说你站着赶什么，赶紧上来砍死他！！！</dd>
+						<dt><a href="" class="primary-achive follow">关注</a></dt>
+					</dl>
+				</li>
+				<li>
+					<p class="channel">【队伍】s1.Jname</p>
+					<dl>
+						<dd>我说你站着赶什么，赶紧上来砍死他！！！</dd>
+						<dt><a href="" class="primary-achive follow">关注</a></dt>
+					</dl>
+				</li>
+				<li>
+					<p class="channel">【队伍】s1.Jname</p>
+					<dl>
+						<dd>我说你站着赶什么，赶紧上来砍死他！！！</dd>
+						<dt><a href="" class="primary-achive follow">关注</a></dt>
+					</dl>
+				</li>
+				<li>
+					<p class="channel">【队伍】s1.Jname</p>
+					<dl>
+						<dd>我说你站着赶什么，赶紧上来砍死他！！！</dd>
+						<dt><a href="" class="primary-achive follow">关注</a></dt>
+					</dl>
+				</li>
+				<li>
+					<p class="channel">【队伍】s1.Jname</p>
+					<dl>
+						<dd>我说你站着赶什么，赶紧上来砍死他！！！</dd>
+						<dt><a href="" class="primary-achive follow">关注</a></dt>
+					</dl>
+				</li>
+
+				<li>
+					<p class="channel">【队伍】s1.Jname</p>
+					<dl>
+						<dd>我说你站着赶什么，赶紧上来砍死他！！！</dd>
+						<dt><a href="" class="primary-achive follow">关注</a></dt>
+					</dl>
+				</li>
+				<li>
+					<p class="channel">【队伍】s1.Jname</p>
+					<dl>
+						<dd>我说你站着赶什么，赶紧上来砍死他！！！</dd>
+						<dt><a href="" class="primary-achive follow">关注</a></dt>
+					</dl>
+				</li>				
+
+			</ul>
+		</div>
+	</div>
+</div>
+</body>
+<!-- 全局js -->
+<script src="js/jquery.min.js"></script>
+ <script src="js/layer/layer.js"></script>
+<!--Marquee无缝滚动-->
+ <script src="js/jquery.liMarquee.js"></script>
+<script type="text/javascript">
+$(window).resize(function(){
+$(".sroll_wrap").height($('.chat-box').height()-80);
+})
+$(".sroll_wrap").height($('.chat-box').height()-80);
+function lexicon() {
+    layer.open({
+    type: 2,
+    title: '敏感词库',
+    shadeClose: true,
+    btn: ['保存','关闭'],
+    area : ['700px' , '460px'],
+    content: 'lexicon.html'
+    });
+}
+/*监控记录滚动*/
+$(function(){
+$('.sroll_wrap').liMarquee({
+	direction: 'up'
+});
+$('.stop_sroll').click(function(){
+	if ($(this).hasClass('on')) {
+		$(this).removeClass('on').text('暂停滚动');
+		$('.sroll_wrap').liMarquee('update');
+	}else {
+		$(this).addClass('on').text('恢复滚动');
+		$('.sroll_wrap').liMarquee('pause');
+	}
+})
+})
+</script> 
+</body>
+</html>

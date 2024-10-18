@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="renderer" content="webkit">
+<title>充值梯度</title>
+<meta name="keywords" content="">
+<meta name="description" content="">
+<!--全局样式-->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<link href="css/screen.css" rel="stylesheet">
+<!--图标-->
+<link href="css/font-awesome.min.css" rel="stylesheet">
+<!--表单表格-->
+<link href="js/bootstrap-table/bootstrap-table.min.css" rel="stylesheet">
+<link href="css/form.css" rel="stylesheet">
+<!--日期-->
+<link href="js/date/daterangepicker.css" rel="stylesheet">
+<!--mobile 样式-->
+<link href="css/mobile.css" rel="stylesheet">
+<!--[if lt IE 9]>
+<meta http-equiv="refresh" content="0;ie.html" />
+<script src="js/html5shiv.min.js"></script>
+<script src="js/respond.min.js"></script>
+<![endif]-->
+</head>
+<body class="form-body">
+<div class="form-wrapper" style="padding-top: 0">
+<ul class="list-inline page-tab clearfix">
+	<li><a href="rechargeanalysis.html">充值统计</a><em></em></li>
+	<li><a href="rechargeeveryhour.html">每小时充值</a><em></em></li>
+	<li class="cur"><a href="rechargegradient.html">充值梯度</a><em></em></li>
+	<li><a href="rechargesummary.html">充值排行</a><em></em></li>
+</ul>
+<div class="form-item">
+<form class="form-inline clearfix" role="form"> 
+    <div class="form-group">
+        <label class="control-label m-l-xs">周期：</label>
+        <select class="form-control" style="width: 80px;min-width: 80px;">
+        <option value="" selected="">首充</option>
+        <option value="1"></option>
+        </select>
+    </div>
+	<div class="form-group">
+		<label class="control-label">时间：</label>
+		<span class="date-range">
+		<input placeholder="开始时间" class="form-control date-range00 date-ico" type="text">
+		<input placeholder="结束时间" class="form-control date-range01 date-ico" type="text">
+		</span>
+	</div>	
+	<button class="btn btn-info m-l" type="button"> 查询</button>	
+</form>
+<p class="popover-options">
+	<a href="#" type="button" data-placement="bottom" data-trigger="hover" 
+	   data-container="body" data-toggle="popover" data-content="
+		<p><em>刷新时间：</em>实时</p>
+		<p><em>付费ARPU：</em>总付费金额/总付费人数</p>
+		<p><em>付费ARPU：</em>总付费金额/总付费人数</p>
+		<p><em>付费ARPU：</em>总付费金额/总付费人数</p>
+		<p><em>付费ARPU：</em>总付费金额/总付费人数</p>
+		">
+		<i class="fa fa-question-circle" aria-hidden="true"></i>
+	</a>
+</p>
+</div>	
+<h1>充值金额梯度</h1>
+<div class="table-wrap">
+    <table  data-toggle="table" class="table" data-height="200">
+    <thead>
+        <tr>
+            <th>日期</th>
+            <th>1元</th>
+            <th>2-10元</th>
+            <th>11-50元</th>
+            <th>51-100元</th>
+            <th>101-200元</th>
+            <th>201-500元</th>
+            <th>501-1000元</th>
+            <th>1001-2000元</th>
+            <th>2001-5000元</th>
+            <th>5001-10000元</th>
+            <th>10001-∞元</th>
+            </tr>
+        </thead>
+        <tbody>                                  
+        <tr>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+         </tr>
+         <tr>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+         </tr>      
+
+        </tbody>
+    </table>
+</div>
+<h1>充值等级</h1>
+<div class="table-wrap">
+    <table  data-toggle="table" class="table" data-height="200">
+    <thead>
+        <tr>
+            <th>日期</th>
+            <th>1元</th>
+            <th>2-10元</th>
+            <th>11-50元</th>
+            <th>51-100元</th>
+            <th>101-200元</th>
+            <th>201-500元</th>
+            <th>501-1000元</th>
+            <th>1001-2000元</th>
+            <th>2001-5000元</th>
+            <th>5001-10000元</th>
+            <th>10001-∞元</th>
+            </tr>
+        </thead>
+        <tbody>                                  
+        <tr>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+         </tr>
+         <tr>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+         </tr>      
+
+        </tbody>
+    </table>
+</div>
+
+ </div>
+<!-- 全局js -->
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<!-- Bootstrap table -->
+<script src="js/bootstrap-table/bootstrap-table.min.js"></script>
+<script src="js/bootstrap-table/locale/bootstrap-table-zh-CN.min.js"></script>
+<script src="js/table-demo.js"></script>
+<!--日期-->
+<script type="text/javascript" src="js/date/moment.min.js"></script> 
+<script type="text/javascript" src="js/date/jquery.daterangepicker.js"></script>
+<script type="text/javascript">
+ $('.date-range').dateRangePicker(
+{
+    separator : ' to ',
+     format: 'YYYY-MM-DD HH:mm:ss',
+     endDate: moment(),
+    getValue: function()
+    {
+
+        if ($('.date-range00').val() && $('.date-range01').val() )
+            return $('.date-range00').val() + ' 至 ' + $('.date-range01').val();
+        else
+            return '';
+    },
+    setValue: function(s,s1,s2)
+    {
+        $('.date-range00').val(s1);
+        $('.date-range01').val(s2);
+    },
+    time: {
+    enabled: true
+  },
+defaultTime: moment().subtract(1, 'month').startOf('month').startOf('day').toDate(),
+defaultEndTime: moment().endOf('day').toDate()
+});
+$(function () { $(".popover-options a").popover({
+		html : true 
+	});});
+
+</script>
+</body>
+</html>

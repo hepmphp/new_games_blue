@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="renderer" content="webkit">
+<title>邮件管理--邮件列表</title>
+<meta name="keywords" content="">
+<meta name="description" content="">
+<!--全局样式-->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<link href="css/screen.css" rel="stylesheet">
+<!--图标-->
+<link href="css/font-awesome.min.css" rel="stylesheet">
+<!--表单表格-->
+<link href="js/bootstrap-table/bootstrap-table.min.css" rel="stylesheet">
+<link href="css/form.css" rel="stylesheet">
+<!--日期-->
+<link href="js/date/daterangepicker.css" rel="stylesheet">
+<!--mobile 样式-->
+<link href="css/mobile.css" rel="stylesheet">
+<!--[if lt IE 9]>
+<meta http-equiv="refresh" content="0;ie.html" />
+<script src="js/html5shiv.min.js"></script>
+<script src="js/respond.min.js"></script>
+<![endif]-->
+</head>
+<body class="form-body">
+<div class="form-wrapper" style="padding-top: 0">
+	<ul class="list-inline page-tab clearfix">
+    <li class="cur"><a href="mailinglist.html">邮件列表</a><em></em></li>
+    <li><a href="sendemails.html">发邮件</a><em></em></li>
+</ul>
+<div class="form-item">
+<form class="form-inline clearfix" role="form"> 
+	<div class="form-group">
+		 <label class="control-label">平台：</label>
+		 <select class="form-control">
+		 	<option value=""></option>
+		 </select>
+	</div>
+	<div class="form-group">
+		 <label class="control-label">区服：</label>
+		 <select class="form-control">
+		 	<option value=""></option>
+		 </select>
+	</div>
+	<div class="form-group">
+		 <label class="control-label">状态：</label>
+		 <select class="form-control">
+		 	<option value=""></option>
+		 </select>
+	</div>
+	<div class="form-group">
+		 <label class="control-label">类型：</label>
+		 <select class="form-control">
+		 	<option value=""></option>
+		 </select>
+	</div>
+	<div class="form-group">
+		<label class="control-label">生效日期：</label>
+		<span class="date-range">
+		<input placeholder="开始时间" class="form-control date-range00 date-ico" type="text">
+		<input placeholder="结束时间" class="form-control date-range01 date-ico" type="text">
+		</span>
+	</div>	
+	<button class="btn btn-info m-l" type="button"> 查询</button>	
+</form>
+<p class="popover-options">
+	<a href="#" type="button" data-placement="bottom" data-trigger="hover" 
+	   data-container="body" data-toggle="popover" data-content="
+		<p><em>刷新时间：</em>实时</p>
+		<p><em>付费ARPU：</em>总付费金额/总付费人数</p>
+		<p><em>付费ARPU：</em>总付费金额/总付费人数</p>
+		<p><em>付费ARPU：</em>总付费金额/总付费人数</p>
+		<p><em>付费ARPU：</em>总付费金额/总付费人数</p>
+		">
+		<i class="fa fa-question-circle" aria-hidden="true"></i>
+	</a>
+</p>
+</div>	
+<div class="table-wrap">
+    <table  data-toggle="table" class="table-item2 table mailinglist-table">
+    <thead>
+        <tr>
+            <th class="th1">消息ID</th>
+            <th class="th2">平台</th>
+            <th class="th3">区服</th>
+            <th class="th4">邮件文字内容</th>
+            <th class="th5">附件</th>
+            <th class="th6">状态</th>
+            <th class="th7">发送时间</th>
+            <th class="th8">申请人</th>
+            <th class="th9">添加时间</th>
+            <th class="th10">操作</th>
+            </tr>
+        </thead>
+        <tbody>                                  
+        <tr>
+        <td>123456</td>
+        <td>爱奇艺</td>
+        <td>s1-s25</td>
+        <td>例行维护补充</td>
+        <td>亲爱的玩家，为了您更好的游戏体验，XXXX《xxxxxx》将于1月12日7:00-9:00进行全服更新维护，维护期间将不能上游戏。</td>
+        <td class="text-warning">审核中</td>
+        <td>2017-01-01 24:59:59</td>
+        <td>admin</td>
+        <td>2017-01-01 24:59:59</td>
+        <td><a href="" style="color: #009900">[通过]</a><a href="" style="color: #FF0000">[驳回]</a></td>
+         </tr>
+         <tr>
+        <td>123456</td>
+        <td>爱奇艺</td>
+        <td>s1-s25</td>
+        <td>例行维护补充</td>
+        <td>亲爱的玩家，为了您更好的游戏体验，XXXX《xxxxxx》将于1月12日7:00-9:00进行全服更新维护，维护期间将不能上游戏。</td>
+        <td class="text-normal">发送中</td>
+        <td>2017-01-01 24:59:59</td>
+        <td>admin</td>
+        <td>2017-01-01 24:59:59</td>
+        <td><a href="" style="color: #009900">[通过]</a><a href="" style="color: #FF0000">[驳回]</a></td>
+         </tr>
+        <tr>
+        <td>123456</td>
+        <td>爱奇艺</td>
+        <td>s1-s25</td>
+        <td>例行维护补充</td>
+        <td>亲爱的玩家，为了您更好的游戏体验，XXXX《xxxxxx》将于1月12日7:00-9:00进行全服更新维护，维护期间将不能上游戏。</td>
+        <td class="text-danger">计划中</td>
+        <td>2017-01-01 24:59:59</td>
+        <td>admin</td>
+        <td>2017-01-01 24:59:59</td>
+        <td><a href="" style="color: #009900">[通过]</a><a href="" style="color: #FF0000">[驳回]</a></td>
+         </tr>
+        </tbody>
+    </table>
+</div>
+<div class="page-bottom clearfix">
+
+<div class="pull-right pagination">
+<span class="page-list">每页显示 
+	<span class="btn-group dropup">
+		<button type="button" class="btn btn-default  btn-outline dropdown-toggle" data-toggle="dropdown">
+			<span class="page-size">10</span> 
+			<span class="caret"></span>
+		</button>
+		<ul class="dropdown-menu" role="menu">
+			<li class="active">
+				<a href="javascript:void(0)">10</a>
+			</li>
+			<li>
+				<a href="javascript:void(0)">25</a>
+			</li>
+		</ul>
+	</span> 
+条</span>
+<ul class="pagination pagination-outline">
+    <li class="page-pre"><a href="javascript:void(0)">&laquo;</a></li>
+    <li class="page-number active"><a href="javascript:void(0)">1</a></li>
+    <li class="page-number"><a href="javascript:void(0)">2</a></li>
+    <li class="page-next"><a href="javascript:void(0)">&raquo;</a></li>
+</ul>
+<input class="form-control jump-page" size="2" maxlength="7" type="text" style="width: 40px;">
+<a href="" style="margin-right: 10px;">跳转</a>
+</div>
+</div>
+
+ </div>
+<!-- 全局js -->
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<!-- Bootstrap table -->
+<script src="js/bootstrap-table/bootstrap-table.min.js"></script>
+<script src="js/bootstrap-table/locale/bootstrap-table-zh-CN.min.js"></script>
+<script src="js/table-demo.js"></script>
+<!--日期-->
+<script type="text/javascript" src="js/date/moment.min.js"></script> 
+<script type="text/javascript" src="js/date/jquery.daterangepicker.js"></script>
+<script type="text/javascript">
+ $('.date-range').dateRangePicker(
+{
+    separator : ' to ',
+     format: 'YYYY-MM-DD HH:mm:ss',
+     endDate: moment(),
+    getValue: function()
+    {
+
+        if ($('.date-range00').val() && $('.date-range01').val() )
+            return $('.date-range00').val() + ' 至 ' + $('.date-range01').val();
+        else
+            return '';
+    },
+    setValue: function(s,s1,s2)
+    {
+        $('.date-range00').val(s1);
+        $('.date-range01').val(s2);
+    },
+    time: {
+    enabled: true
+  },
+defaultTime: moment().subtract(1, 'month').startOf('month').startOf('day').toDate(),
+defaultEndTime: moment().endOf('day').toDate()
+});
+$(function () { $(".popover-options a").popover({
+		html : true 
+	});});
+
+</script>
+</body>
+</html>

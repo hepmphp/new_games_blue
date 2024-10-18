@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="renderer" content="webkit">
+<title>系统公告-公告列表</title>
+<meta name="keywords" content="">
+<meta name="description" content="">
+<!--全局样式-->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<link href="css/screen.css" rel="stylesheet">
+<!--图标-->
+<link href="css/font-awesome.min.css" rel="stylesheet">
+<!--表单表格-->
+<link href="js/bootstrap-table/bootstrap-table.min.css" rel="stylesheet">
+<link href="css/form.css" rel="stylesheet">
+<!--日期-->
+<link href="js/date/daterangepicker.css" rel="stylesheet">
+<!--mobile 样式-->
+<link href="css/mobile.css" rel="stylesheet">
+<!--[if lt IE 9]>
+<meta http-equiv="refresh" content="0;ie.html" />
+<script src="js/html5shiv.min.js"></script>
+<script src="js/respond.min.js"></script>
+<![endif]-->
+</head>
+<body class="form-body yellow-popover">
+<div class="form-wrapper" style="padding-top: 0">
+	<ul class="list-inline page-tab clearfix">
+    <li><a href="announcementlist.html">公告列表</a><em></em></li>
+    <li class="cur"><a href="announcement.html">发公告</a><em></em></li>
+    </ul>
+<div class="form-item">
+<p class="popover-options">
+	<a href="#" type="button" data-placement="bottom" data-trigger="hover" 
+	   data-container="body" data-toggle="popover" data-content="
+		<p>多个连续区服输入：t1-t10</p>
+		<p>不连续区服可输入：t1,t2,t5,t6 或者 t1-t2,t5-t6</p>
+		<p>不同类型注意前缀：t1,s1</p>
+		">
+		<i class="fa fa-question-circle" aria-hidden="true"></i>
+	</a>
+</p>
+</div>
+<div class="announce-cont">
+<div class="form-item">
+<div id="add-form" class="ser-view">
+<div class="form-inline clearfix"> 
+	<div class="form-group">
+		 <label class="control-label">平台区服：</label>
+		 <select class="form-control">
+		 	<option value="请选择平台">请选择平台</option>
+		 </select>
+		 <input class="form-control" type="text" placeholder="请输入区服范围">
+		 <a href="javascript:void(0)" class="testing">检测</a>
+		 <span class="exp">例如：输入“s1-s15,s20-s24,t5-t7”</span>
+	</div>
+</div>
+<div class="form-inline clothing clearfix" style="display: none;"> 
+<label class="control-label fl">区服核对：</label>
+<div class="clothing-check">
+	<p>
+		<span><input type="checkbox"> s1-5（5合1）</span>
+		<span><input type="checkbox"> s1-5（5合1）</span>
+		<span><input type="checkbox"> s1-5（5合1）</span>
+	</p>
+	<p>
+		<span><input type="checkbox"> s1-5（5合1）</span>
+		<span><input type="checkbox"> s1-5（5合1）</span>
+		<span><input type="checkbox"> s1-5（5合1）</span>
+		<span><input type="checkbox"> s1-5（5合1）</span>
+		<span><input type="checkbox"> s1-5（5合1）</span>
+	</p>
+	<p>
+		<span><input type="checkbox"> s1-5（5合1）</span>
+		<span><input type="checkbox"> s1-5（5合1）</span>
+		<span><input type="checkbox"> s1-5（5合1）</span>
+	</p>
+</div>
+</div>
+</div>
+<a href="javascript:void(0)" class="add-announce" style="width: 60px">添加平台</a>
+
+<div class="form-inline clearfix"> 
+	<div class="form-group">
+		 <label class="control-label" style="vertical-align: top;">发送时间：<input type="radio">立即发送</label>
+	</div>
+</div>
+<div class="form-inline ml clearfix"> 
+	<div class="form-group">
+		 <input type="radio">指定时间发送
+		  <input type="text" class="form-control date-range1 date-ico" placeholder="时间">
+	</div>
+</div>
+<div class="form-inline ml clearfix"> 
+	<div class="form-group">
+		 <input type="radio">循环；间隔
+		 <input type="text" class="form-control w70"> 分钟
+		 开始时间：
+		<span class="date-range">
+		<input placeholder="开始时间" class="form-control date-range00 date-ico" type="text">
+		<input placeholder="结束时间" class="form-control date-range01 date-ico" type="text">
+		</span>
+		<span class="text-warning">(1天=1440分钟)</span>
+	</div>
+</div>
+<div class="form-inline clearfix"> 
+
+	<div class="form-group">
+		<label class="control-label" style="vertical-align: top;">消息内容：</label>
+        <textarea class="form-control" rows="5"></textarea>
+	</div>		
+</div>
+<p class="text-warning pl-75">公告中链接输入样式：如“点击查看”需要链接到www.baidu.com，则编辑为｛L点击查看###http://www.baidu.com｝</p>
+<button class="btn btn-info" type="button"> 确认添加消息</button>
+</div>	
+
+</div>
+
+ </div>
+<!-- 全局js -->
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<!-- Bootstrap table -->
+<script src="js/bootstrap-table/bootstrap-table.min.js"></script>
+<script src="js/bootstrap-table/locale/bootstrap-table-zh-CN.min.js"></script>
+<script src="js/table-demo.js"></script>
+<!--日期-->
+<script type="text/javascript" src="js/date/moment.min.js"></script> 
+<script type="text/javascript" src="js/date/jquery.daterangepicker.js"></script>
+<script type="text/javascript">
+    $('.date-range1').dateRangePicker(
+    {
+        autoClose: true,
+        singleDate : true,
+        singleMonth: true,
+        showShortcuts: false,
+          startOfWeek: 'monday',
+        format: 'YYYY-MM-DD HH:mm:ss',
+        time: {
+            enabled: true
+        }
+    });
+ $('.date-range').dateRangePicker(
+{
+    separator : ' to ',
+     format: 'YYYY-MM-DD HH:mm:ss',
+     endDate: moment(),
+    getValue: function()
+    {
+
+        if ($('.date-range00').val() && $('.date-range01').val() )
+            return $('.date-range00').val() + ' 至 ' + $('.date-range01').val();
+        else
+            return '';
+    },
+    setValue: function(s,s1,s2)
+    {
+        $('.date-range00').val(s1);
+        $('.date-range01').val(s2);
+    },
+    time: {
+    enabled: true
+  },
+defaultTime: moment().subtract(1, 'month').startOf('month').startOf('day').toDate(),
+defaultEndTime: moment().endOf('day').toDate()
+});
+$(function () { $(".popover-options a").popover({
+		html : true 
+	});
+});
+$(".testing").click(function(){
+ $(this).parents('.form-inline').next('.clothing').toggle();
+})
+  $(".add-announce").click(function(){
+    $("#add-form").after("<div class='ser-view' id=i><div class='form-inline clearfix'><div class='form-group'><label class='control-label'>平台区服：</label>&nbsp;<select class='form-control'><option value='请选择平台'>请选择平台</option><option value='萌乐网'>萌乐网</option></select>&nbsp;<input class='form-control' type='text' placeholder='请输入区服范围'>&nbsp;<a href='javascript:void(0)' class='testing'>检测</a></div></div><div class='form-inline clothing clearfix' style='display: none;'><label class='control-label fl'>区服核对：</label><div class='clothing-check'><p><span><input type='checkbox'> s1-5（5合1）</span><span><input type='checkbox'> s1-5（5合1）</span><span><input type='checkbox'> s1-5（5合1）</span></p><p><span><input type='checkbox'> s1-5（5合1）</span><span><input type='checkbox'> s1-5（5合1）</span><span><input type='checkbox'> s1-5（5合1）</span><span><input type='checkbox'> s1-5（5合1）</span><span><input type='checkbox'> s1-5（5合1）</span></p><p><span><input type='checkbox'> s1-5（5合1）</span><span><input type='checkbox'> s1-5（5合1）</span><span><input type='checkbox'> s1-5（5合1）</span></p></div></div></div>");
+	$(".testing").on("click",function(){
+  $(this).parents('.ser-view').children('.clothing').toggle();
+   });
+  });
+</script>
+</body>
+</html>

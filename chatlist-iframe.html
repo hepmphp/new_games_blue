@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="renderer" content="webkit">
+<title>聊天监控</title>
+<meta name="keywords" content="">
+<meta name="description" content="">
+<!--全局样式-->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<link href="css/screen.css" rel="stylesheet">
+<!--图标-->
+<link href="css/font-awesome.min.css" rel="stylesheet">
+<!--表单表格-->
+<link href="js/bootstrap-table/bootstrap-table.min.css" rel="stylesheet">
+<link href="css/form.css" rel="stylesheet">
+<!--日期-->
+<link href="js/date/daterangepicker.css" rel="stylesheet">
+<!--mobile 样式-->
+<link href="css/mobile.css" rel="stylesheet">
+<!--[if lt IE 9]>
+<meta http-equiv="refresh" content="0;ie.html" />
+<script src="js/html5shiv.min.js"></script>
+<script src="js/respond.min.js"></script>
+<![endif]-->
+</head>
+<body class="form-wrapper">
+ <div class="concerns-box form-item">
+ 	<h4>关注列表：</h4>
+		<div class="hd form-inline clearfix">
+			<label class="control-label" style="width: 100px;display: inline-block;">默认封禁时间：</label> 
+			<select class="form-control" style="width: 150px;display: inline-block;">
+			<option value="">全部</option>
+		    </select>
+		    <button class="btn btn-xs btn-sitive fr" type="button" onclick="bannedlist();"> 封禁列表</button>	
+		</div>
+		<div class="table-wrap">
+		    <table  data-toggle="table" class="chat-table table">
+		    <thead>
+		        <tr>
+		            <th>角色名</th>
+		            <th>聊天内容</th>
+		            <th>发送时间</th>
+		            <th>操作</th>
+		            </tr>
+		        </thead>
+		        <tbody>                                  
+		        <tr>
+		        <td>s1.拉人3号</td>
+		        <td>加我 扣  扣进群1/2/3/4/5/6/7/8，我送~~首~~充啦~~~~~~~~~~~~~~<a href="" class="p-l-s">[更多]</a></td>
+		        <td>2017-01-0112:51:47</td>
+		        <td><a href="">[禁言]</a> <a href="">[封号]</a> <a href="">[封IP]</a></td>
+		         </tr>
+		        <tr>
+		        <td>s1.拉人3号</td>
+		        <td>加我 扣  扣进群1/2/3/4/5/6/7/8，我送~~首~~充啦~~~~~~~~~~~~~~<a href="" class="p-l-s">[更多]</a></td>
+		        <td>2017-01-0112:51:47</td>
+		        <td><a href="">[禁言]</a> <a href="">[封号]</a> <a href="">[封IP]</a></td>
+		         </tr> 
+		        <tr>
+		        <td>s1.拉人3号</td>
+		        <td>加我 扣  扣进群1/2/3/4/5/6/7/8，我送~~首~~充啦~~~~~~~~~~~~~~<a href="" class="p-l-s">[更多]</a></td>
+		        <td>2017-01-0112:51:47</td>
+		        <td><a href="">[禁言]</a> <a href="">[封号]</a> <a href="">[封IP]</a></td>
+		         </tr>  
+
+
+		        </tbody>
+		    </table>
+		</div>
+		<div class="page-bottom clearfix">
+		<div class="pull-left pagination-detail">
+			充值金额：41654; 人数：160; 人次：383
+		</div>
+		<div class="pull-right pagination">
+		<span class="page-list">每页显示 
+			<span class="btn-group dropup">
+				<button type="button" class="btn btn-default  btn-outline dropdown-toggle" data-toggle="dropdown">
+					<span class="page-size">10</span> 
+					<span class="caret"></span>
+				</button>
+				<ul class="dropdown-menu" role="menu">
+					<li class="active">
+						<a href="javascript:void(0)">10</a>
+					</li>
+					<li>
+						<a href="javascript:void(0)">25</a>
+					</li>
+				</ul>
+			</span> 
+		条</span>
+		<ul class="pagination pagination-outline">
+		    <li class="page-pre"><a href="javascript:void(0)">&laquo;</a></li>
+		    <li class="page-number active"><a href="javascript:void(0)">1</a></li>
+		    <li class="page-number"><a href="javascript:void(0)">2</a></li>
+		    <li class="page-next"><a href="javascript:void(0)">&raquo;</a></li>
+		</ul>
+		<input class="form-control jump-page" size="2" maxlength="7" type="text" style="width: 40px;">
+		<a href="" style="margin-right: 10px;">跳转</a>
+		</div>
+		</div>	
+ </div>
+<!-- 全局js -->
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<!-- Bootstrap table -->
+<script src="js/bootstrap-table/bootstrap-table.min.js"></script>
+<script src="js/bootstrap-table/locale/bootstrap-table-zh-CN.min.js"></script>
+ <script src="js/table-demo.js"></script> 
+ <script src="js/layer/layer.js"></script>  
+ <script>
+
+ function bannedlist() {
+    layer.open({
+    type: 2,
+    title: '封禁列表',
+    shadeClose: true,
+    btn: ['确认','关闭'],
+    area : ['70%' , '80%'],
+    content: 'bannedlist.html'
+    });
+}
+ </script> 
+</body>
+</html>

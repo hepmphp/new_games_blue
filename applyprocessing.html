@@ -1,0 +1,2351 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="renderer" content="webkit">
+<title>开服申请处理</title>
+<meta name="keywords" content="">
+<meta name="description" content="">
+<!--全局样式-->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<link href="css/screen.css" rel="stylesheet">
+<!--图标-->
+<link href="css/font-awesome.min.css" rel="stylesheet">
+<!--表单表格-->
+<link href="js/bootstrap-table/bootstrap-table.min.css" rel="stylesheet">
+<link href="css/form.css" rel="stylesheet">
+<link href="css/gard.css" rel="stylesheet">
+<!--日期-->
+<link href="js/date/daterangepicker.css" rel="stylesheet">
+<!--mobile 样式-->
+<link href="css/mobile.css" rel="stylesheet">
+<!--[if lt IE 9]>
+<meta http-equiv="refresh" content="0;ie.html" />
+<script src="js/html5shiv.min.js"></script>
+<script src="js/respond.min.js"></script>
+<![endif]-->
+</head>
+<body class="form-body">
+<div class="form-wrapper">
+<div class="form-item">
+<p class="popover-options">
+	<a href="#" type="button" data-placement="bottom" data-trigger="hover" 
+	   data-container="body" data-toggle="popover" data-content="
+		<p><em>刷新时间：</em>实时</p>
+		<p><em>付费ARPU：</em>总付费金额/总付费人数</p>
+		<p><em>付费ARPU：</em>总付费金额/总付费人数</p>
+		<p><em>付费ARPU：</em>总付费金额/总付费人数</p>
+		<p><em>付费ARPU：</em>总付费金额/总付费人数</p>
+		">
+		<i class="fa fa-question-circle" aria-hidden="true"></i>
+	</a>
+</p>
+<form class="form-inline clearfix" role="form"> 
+    <div class="form-group">
+        <label class="control-label">平台：</label>
+        <select class="form-control">
+        <option value="" selected=""></option>
+        <option value="1"></option>
+        </select>
+    </div> 
+    <div class="form-group">
+        <label class="control-label">状态：</label>
+        <select class="form-control">
+        <option value="" selected=""></option>
+        <option value="1"></option>
+        </select>
+    </div> 
+	<div class="form-group">
+		<label class="control-label">申请时间：</label>
+		<span class="date-range">
+		<input placeholder="开始时间" class="form-control date-range00 date-ico" type="text">
+		<input placeholder="结束时间" class="form-control date-range01 date-ico" type="text">
+		</span>
+	</div>	
+	<button class="btn btn-info m-l" type="button"> 查询</button>	
+</form>
+</div>	
+
+<div class="table-wrap chart-table">
+    <div class="table-head">
+        <div class="table-head-wrap">
+            <table class="combination">
+                <thead>
+                <tr>
+                    <th width="10%">
+                        <span class="tab-link">平台</span>
+                    </th>
+                    <th width="8%">
+                        <span class="tab-link">区服信息</span>
+                    </th>
+                    <th width="15%">
+                        <span class="tab-link">时间</span>
+                    </th>
+                    <th width="55%">
+                        <span class="tab-link">配置信息</span>
+                    </th>
+                    <th width="5%">
+                        <span class="tab-link">状态</span>
+                    </th>  
+                    <th width="7%">
+                        <span class="tab-link">操作</span>
+                    </th>                                                       
+                </tr>
+                </thead>
+            </table>
+        </div>
+    </div>
+        <div class="table-content grid-tbody">
+            <table class="combination">
+                <tbody>
+              <tr>
+                <td colspan="6" style="padding: 0">
+                <div>
+                <table class="combination table-tree">
+                <tbody>
+                <tr class="hd">
+                    <td width="10%" class="toggle">
+                    	<div><img src="images/pt.png" width="19" height="16"> 搜狗</div>
+                    </td>
+                    <td width="8%" class="toggle">
+                    	<div>正式服 3组</div>
+                    </td>
+                    <td  width="15%" class="toggle">
+                    	<div>2017-01-01  10:12:59 申请 </div>
+                    </td>
+                    <td width="55%" class="toggle">
+                    	<div></div>
+                    </td>
+                    <td width="5%" class="toggle">
+                    	<div>未审核</div>
+                    </td>   
+                    <td width="7%">
+                    	<div><a href="" class="text-success opear">商务审核</a><a href="" class="text-danger opear">驳回</a>
+                     </div>
+                    </td>
+                </tr>
+                <tr class="bm">
+                    <td width="10%">
+                    	<div></div>
+                    </td>
+                    <td width="8%">
+                    	<div>正式服 3组</div>
+                    </td>
+                    <td  width="15%">
+                    	<div>2017-01-01  10:12:59 开启<a href="javascript:void(0)" onclick="seropen();"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></div>
+                    </td>
+                    <td width="55%">
+                    	<div>机房： 
+                    		<select class="sel1">
+                    		<option value="">机房1</option>
+                    	    </select>
+                    	    &nbsp;&nbsp;&nbsp;机器： 
+                    		<select class="sel1">
+                    		<option value="">m1（10/10）</option>
+                    	    </select>
+                    	    &nbsp;&nbsp;&nbsp;服务器端口： 
+                    		<select class="sel1">
+                    		<option value="">10001-3306</option>
+                    	    </select>
+                    </div>
+                    </td>
+                    <td width="5%" class="text-danger">
+                    	<div>未审核</div>
+                    </td>   
+                    <td width="7%">
+                    	<div><a href="" class="text-success opear">商务审核</a><a href="" class="text-danger opear">驳回</a>
+                     </div>
+                    </td>
+                </tr> 
+                 <tr class="bm">
+                    <td width="10%">
+                    	<div></div>
+                    </td>
+                    <td width="8%">
+                    	<div>正式服 3组</div>
+                    </td>
+                    <td  width="15%">
+                    	<div>2017-01-01  10:12:59 开启<a href="javascript:void(0)" onclick="seropen();"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></div>
+                    </td>
+                    <td width="55%">
+                    	<div>机房： 
+                    		<select class="sel1">
+                    		<option value="">机房1</option>
+                    	    </select>
+                    	    &nbsp;&nbsp;&nbsp;机器： 
+                    		<select class="sel1">
+                    		<option value="">m1（10/10）</option>
+                    	    </select>
+                    	    &nbsp;&nbsp;&nbsp;服务器端口： 
+                    		<select class="sel1">
+                    		<option value="">10001-3306</option>
+                    	    </select>
+                    </div>
+                    </td>
+                    <td width="5%" class="text-danger">
+                    	<div>未审核</div>
+                    </td>   
+                    <td width="7%">
+                    	<div><a href="" class="text-success opear">商务审核</a><a href="" class="text-danger opear">驳回</a>
+                     </div>
+                    </td>
+                </tr>                                                                             
+                </tbody>
+              </table>
+              </div>
+               </td>
+            </tr>
+
+
+
+
+
+
+
+
+
+               <tr>
+                <td colspan="6"  style="padding: 0">
+                <div>
+                <table class="combination table-tree">
+                <tbody>
+                <tr class="hd">
+                    <td width="10%" class="toggle">
+                    	<div><img src="images/pt.png" width="19" height="16"> 搜狗</div>
+                    </td>
+                    <td width="8%" class="toggle text-gray">
+                    	<div>正式服 3组</div>
+                    </td>
+                    <td  width="15%" class="toggle text-gray">
+                    	<div>2017-01-01  10:12:59 申请 </div>
+                    </td>
+                    <td width="55%" class="toggle text-gray">
+                    	<div></div>
+                    </td>
+                    <td width="5%" class="toggle text-666">
+                    	<div>已完成</div>
+                    </td>   
+                    <td width="7%">
+                    	<div><a href="" class="text-success opear">批量确定</a><a href="" class="text-danger opear">驳回</a>
+                     </div>
+                    </td>
+                </tr>
+                <tr class="bm">
+                    <td width="10%">
+                    	<div></div>
+                    </td>
+                    <td width="8%" class="text-gray">
+                    	<div>正式服 3组</div>
+                    </td>
+                    <td  width="15%" class="text-gray">
+                    	<div>2017-01-01  10:12:59 开启<a href="javascript:void(0)" onclick="seropen();"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></div>
+                    </td>
+                    <td width="55%" class="text-gray">
+                    	<div>机房： 
+                    		<select class="sel1">
+                    		<option value="">机房1</option>
+                    	    </select>
+                    	    &nbsp;&nbsp;&nbsp;机器： 
+                    		<select class="sel1">
+                    		<option value="">m1（10/10）</option>
+                    	    </select>
+                    	    &nbsp;&nbsp;&nbsp;服务器端口： 
+                    		<select class="sel1">
+                    		<option value="">10001-3306</option>
+                    	    </select>
+                    </div>
+                    </td>
+                    <td width="5%" class="text-danger">
+                    	<div>未审核</div>
+                    </td>   
+                    <td width="7%">
+                    	<div><a href="" class="text-warning opear">重新配置</a><a href="" class="text-danger opear">驳回</a>
+                     </div>
+                    </td>
+                </tr> 
+                 <tr class="bm">
+                    <td width="10%">
+                    	<div></div>
+                    </td>
+                    <td width="8%" class="text-gray">
+                    	<div>正式服 3组</div>
+                    </td>
+                    <td  width="15%" class="text-gray">
+                    	<div>2017-01-01  10:12:59 开启<a href="javascript:void(0)" onclick="seropen();"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></div>
+                    </td>
+                    <td width="55%" class="text-gray">
+                    	<div>机房： 
+                    		<select class="sel1">
+                    		<option value="">机房1</option>
+                    	    </select>
+                    	    &nbsp;&nbsp;&nbsp;机器： 
+                    		<select class="sel1">
+                    		<option value="">m1（10/10）</option>
+                    	    </select>
+                    	    &nbsp;&nbsp;&nbsp;服务器端口： 
+                    		<select class="sel1">
+                    		<option value="">10001-3306</option>
+                    	    </select>
+                    </div>
+                    </td>
+                    <td width="5%" class="text-danger">
+                    	<div>未审核</div>
+                    </td>   
+                    <td width="7%">
+                    	<div><a href="" class="text-warning opear">重新配置</a><a href="" class="text-danger opear">驳回</a>
+                     </div>
+                    </td>
+                </tr>                                                                             
+                </tbody>
+              </table>
+              </div>
+               </td>
+            </tr>               
+
+               <tr>
+                <td colspan="6"  style="padding: 0">
+                <div>
+                <table class="combination table-tree">
+                <tbody>
+                <tr class="hd">
+                    <td width="10%" class="toggle">
+                    	<div><img src="images/pt.png" width="19" height="16"> 搜狗</div>
+                    </td>
+                    <td width="8%" class="toggle text-gray">
+                    	<div>正式服 3组</div>
+                    </td>
+                    <td  width="15%" class="toggle text-gray">
+                    	<div>2017-01-01  10:12:59 申请 </div>
+                    </td>
+                    <td width="55%" class="toggle text-gray">
+                    	<div></div>
+                    </td>
+                    <td width="5%" class="toggle text-666">
+                    	<div>已完成</div>
+                    </td>   
+                    <td width="7%">
+                    	<div><a href="" class="text-success opear">批量确定</a><a href="" class="text-danger opear">驳回</a>
+                     </div>
+                    </td>
+                </tr>
+                <tr class="bm">
+                    <td width="10%">
+                    	<div></div>
+                    </td>
+                    <td width="8%" class="text-gray">
+                    	<div>正式服 3组</div>
+                    </td>
+                    <td  width="15%" class="text-gray">
+                    	<div>2017-01-01  10:12:59 开启<a href="javascript:void(0)" onclick="seropen();"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></div>
+                    </td>
+                    <td width="55%" class="text-gray">
+                    	<div>机房： 
+                    		<select class="sel1">
+                    		<option value="">机房1</option>
+                    	    </select>
+                    	    &nbsp;&nbsp;&nbsp;机器： 
+                    		<select class="sel1">
+                    		<option value="">m1（10/10）</option>
+                    	    </select>
+                    	    &nbsp;&nbsp;&nbsp;服务器端口： 
+                    		<select class="sel1">
+                    		<option value="">10001-3306</option>
+                    	    </select>
+                    </div>
+                    </td>
+                    <td width="5%" class="text-danger">
+                    	<div>未审核</div>
+                    </td>   
+                    <td width="7%">
+                    	<div><a href="" class="text-warning opear">重新配置</a><a href="" class="text-danger opear">驳回</a>
+                     </div>
+                    </td>
+                </tr> 
+                 <tr class="bm">
+                    <td width="10%">
+                    	<div></div>
+                    </td>
+                    <td width="8%" class="text-gray">
+                    	<div>正式服 3组</div>
+                    </td>
+                    <td  width="15%" class="text-gray">
+                    	<div>2017-01-01  10:12:59 开启<a href="javascript:void(0)" onclick="seropen();"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></div>
+                    </td>
+                    <td width="55%" class="text-gray">
+                    	<div>机房： 
+                    		<select class="sel1">
+                    		<option value="">机房1</option>
+                    	    </select>
+                    	    &nbsp;&nbsp;&nbsp;机器： 
+                    		<select class="sel1">
+                    		<option value="">m1（10/10）</option>
+                    	    </select>
+                    	    &nbsp;&nbsp;&nbsp;服务器端口： 
+                    		<select class="sel1">
+                    		<option value="">10001-3306</option>
+                    	    </select>
+                    </div>
+                    </td>
+                    <td width="5%" class="text-danger">
+                    	<div>未审核</div>
+                    </td>   
+                    <td width="7%">
+                    	<div><a href="" class="text-warning opear">重新配置</a><a href="" class="text-danger opear">驳回</a>
+                     </div>
+                    </td>
+                </tr>                                                                             
+                </tbody>
+              </table>
+              </div>
+               </td>
+            </tr> 
+               <tr>
+                <td colspan="6"  style="padding: 0">
+                <div>
+                <table class="combination table-tree">
+                <tbody>
+                <tr class="hd">
+                    <td width="10%" class="toggle">
+                    	<div><img src="images/pt.png" width="19" height="16"> 搜狗</div>
+                    </td>
+                    <td width="8%" class="toggle text-gray">
+                    	<div>正式服 3组</div>
+                    </td>
+                    <td  width="15%" class="toggle text-gray">
+                    	<div>2017-01-01  10:12:59 申请 </div>
+                    </td>
+                    <td width="55%" class="toggle text-gray">
+                    	<div></div>
+                    </td>
+                    <td width="5%" class="toggle text-666">
+                    	<div>已完成</div>
+                    </td>   
+                    <td width="7%">
+                    	<div><a href="" class="text-success opear">批量确定</a><a href="" class="text-danger opear">驳回</a>
+                     </div>
+                    </td>
+                </tr>
+                <tr class="bm">
+                    <td width="10%">
+                    	<div></div>
+                    </td>
+                    <td width="8%" class="text-gray">
+                    	<div>正式服 3组</div>
+                    </td>
+                    <td  width="15%" class="text-gray">
+                    	<div>2017-01-01  10:12:59 开启<a href="javascript:void(0)" onclick="seropen();"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></div>
+                    </td>
+                    <td width="55%" class="text-gray">
+                    	<div>机房： 
+                    		<select class="sel1">
+                    		<option value="">机房1</option>
+                    	    </select>
+                    	    &nbsp;&nbsp;&nbsp;机器： 
+                    		<select class="sel1">
+                    		<option value="">m1（10/10）</option>
+                    	    </select>
+                    	    &nbsp;&nbsp;&nbsp;服务器端口： 
+                    		<select class="sel1">
+                    		<option value="">10001-3306</option>
+                    	    </select>
+                    </div>
+                    </td>
+                    <td width="5%" class="text-danger">
+                    	<div>未审核</div>
+                    </td>   
+                    <td width="7%">
+                    	<div><a href="" class="text-warning opear">重新配置</a><a href="" class="text-danger opear">驳回</a>
+                     </div>
+                    </td>
+                </tr> 
+                 <tr class="bm">
+                    <td width="10%">
+                    	<div></div>
+                    </td>
+                    <td width="8%" class="text-gray">
+                    	<div>正式服 3组</div>
+                    </td>
+                    <td  width="15%" class="text-gray">
+                    	<div>2017-01-01  10:12:59 开启<a href="javascript:void(0)" onclick="seropen();"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></div>
+                    </td>
+                    <td width="55%" class="text-gray">
+                    	<div>机房： 
+                    		<select class="sel1">
+                    		<option value="">机房1</option>
+                    	    </select>
+                    	    &nbsp;&nbsp;&nbsp;机器： 
+                    		<select class="sel1">
+                    		<option value="">m1（10/10）</option>
+                    	    </select>
+                    	    &nbsp;&nbsp;&nbsp;服务器端口： 
+                    		<select class="sel1">
+                    		<option value="">10001-3306</option>
+                    	    </select>
+                    </div>
+                    </td>
+                    <td width="5%" class="text-danger">
+                    	<div>未审核</div>
+                    </td>   
+                    <td width="7%">
+                    	<div><a href="" class="text-warning opear">重新配置</a><a href="" class="text-danger opear">驳回</a>
+                     </div>
+                    </td>
+                </tr>                                                                             
+                </tbody>
+              </table>
+              </div>
+               </td>
+            </tr> 
+               <tr>
+                <td colspan="6"  style="padding: 0">
+                <div>
+                <table class="combination table-tree">
+                <tbody>
+                <tr class="hd">
+                    <td width="10%" class="toggle">
+                    	<div><img src="images/pt.png" width="19" height="16"> 搜狗</div>
+                    </td>
+                    <td width="8%" class="toggle text-gray">
+                    	<div>正式服 3组</div>
+                    </td>
+                    <td  width="15%" class="toggle text-gray">
+                    	<div>2017-01-01  10:12:59 申请 </div>
+                    </td>
+                    <td width="55%" class="toggle text-gray">
+                    	<div></div>
+                    </td>
+                    <td width="5%" class="toggle text-666">
+                    	<div>已完成</div>
+                    </td>   
+                    <td width="7%">
+                    	<div><a href="" class="text-success opear">批量确定</a><a href="" class="text-danger opear">驳回</a>
+                     </div>
+                    </td>
+                </tr>
+                <tr class="bm">
+                    <td width="10%">
+                    	<div></div>
+                    </td>
+                    <td width="8%" class="text-gray">
+                    	<div>正式服 3组</div>
+                    </td>
+                    <td  width="15%" class="text-gray">
+                    	<div>2017-01-01  10:12:59 开启<a href="javascript:void(0)" onclick="seropen();"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></div>
+                    </td>
+                    <td width="55%" class="text-gray">
+                    	<div>机房： 
+                    		<select class="sel1">
+                    		<option value="">机房1</option>
+                    	    </select>
+                    	    &nbsp;&nbsp;&nbsp;机器： 
+                    		<select class="sel1">
+                    		<option value="">m1（10/10）</option>
+                    	    </select>
+                    	    &nbsp;&nbsp;&nbsp;服务器端口： 
+                    		<select class="sel1">
+                    		<option value="">10001-3306</option>
+                    	    </select>
+                    </div>
+                    </td>
+                    <td width="5%" class="text-danger">
+                    	<div>未审核</div>
+                    </td>   
+                    <td width="7%">
+                    	<div><a href="" class="text-warning opear">重新配置</a><a href="" class="text-danger opear">驳回</a>
+                     </div>
+                    </td>
+                </tr> 
+                 <tr class="bm">
+                    <td width="10%">
+                    	<div></div>
+                    </td>
+                    <td width="8%" class="text-gray">
+                    	<div>正式服 3组</div>
+                    </td>
+                    <td  width="15%" class="text-gray">
+                    	<div>2017-01-01  10:12:59 开启<a href="javascript:void(0)" onclick="seropen();"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></div>
+                    </td>
+                    <td width="55%" class="text-gray">
+                    	<div>机房： 
+                    		<select class="sel1">
+                    		<option value="">机房1</option>
+                    	    </select>
+                    	    &nbsp;&nbsp;&nbsp;机器： 
+                    		<select class="sel1">
+                    		<option value="">m1（10/10）</option>
+                    	    </select>
+                    	    &nbsp;&nbsp;&nbsp;服务器端口： 
+                    		<select class="sel1">
+                    		<option value="">10001-3306</option>
+                    	    </select>
+                    </div>
+                    </td>
+                    <td width="5%" class="text-danger">
+                    	<div>未审核</div>
+                    </td>   
+                    <td width="7%">
+                    	<div><a href="" class="text-warning opear">重新配置</a><a href="" class="text-danger opear">驳回</a>
+                     </div>
+                    </td>
+                </tr>                                                                             
+                </tbody>
+              </table>
+              </div>
+               </td>
+            </tr> 
+
+                <tr>
+                <td colspan="6"  style="padding: 0">
+                <div>
+                <table class="combination table-tree">
+                <tbody>
+                <tr class="hd">
+                    <td width="10%" class="toggle">
+                    	<div><img src="images/pt.png" width="19" height="16"> 搜狗</div>
+                    </td>
+                    <td width="8%" class="toggle text-gray">
+                    	<div>正式服 3组</div>
+                    </td>
+                    <td  width="15%" class="toggle text-gray">
+                    	<div>2017-01-01  10:12:59 申请 </div>
+                    </td>
+                    <td width="55%" class="toggle text-gray">
+                    	<div></div>
+                    </td>
+                    <td width="5%" class="toggle text-666">
+                    	<div>已完成</div>
+                    </td>   
+                    <td width="7%">
+                    	<div><a href="" class="text-success opear">批量确定</a><a href="" class="text-danger opear">驳回</a>
+                     </div>
+                    </td>
+                </tr>
+                <tr class="bm">
+                    <td width="10%">
+                    	<div></div>
+                    </td>
+                    <td width="8%" class="text-gray">
+                    	<div>正式服 3组</div>
+                    </td>
+                    <td  width="15%" class="text-gray">
+                    	<div>2017-01-01  10:12:59 开启<a href="javascript:void(0)" onclick="seropen();"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></div>
+                    </td>
+                    <td width="55%" class="text-gray">
+                    	<div>机房： 
+                    		<select class="sel1">
+                    		<option value="">机房1</option>
+                    	    </select>
+                    	    &nbsp;&nbsp;&nbsp;机器： 
+                    		<select class="sel1">
+                    		<option value="">m1（10/10）</option>
+                    	    </select>
+                    	    &nbsp;&nbsp;&nbsp;服务器端口： 
+                    		<select class="sel1">
+                    		<option value="">10001-3306</option>
+                    	    </select>
+                    </div>
+                    </td>
+                    <td width="5%" class="text-danger">
+                    	<div>未审核</div>
+                    </td>   
+                    <td width="7%">
+                    	<div><a href="" class="text-warning opear">重新配置</a><a href="" class="text-danger opear">驳回</a>
+                     </div>
+                    </td>
+                </tr> 
+                 <tr class="bm">
+                    <td width="10%">
+                    	<div></div>
+                    </td>
+                    <td width="8%" class="text-gray">
+                    	<div>正式服 3组</div>
+                    </td>
+                    <td  width="15%" class="text-gray">
+                    	<div>2017-01-01  10:12:59 开启<a href="javascript:void(0)" onclick="seropen();"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></div>
+                    </td>
+                    <td width="55%" class="text-gray">
+                    	<div>机房： 
+                    		<select class="sel1">
+                    		<option value="">机房1</option>
+                    	    </select>
+                    	    &nbsp;&nbsp;&nbsp;机器： 
+                    		<select class="sel1">
+                    		<option value="">m1（10/10）</option>
+                    	    </select>
+                    	    &nbsp;&nbsp;&nbsp;服务器端口： 
+                    		<select class="sel1">
+                    		<option value="">10001-3306</option>
+                    	    </select>
+                    </div>
+                    </td>
+                    <td width="5%" class="text-danger">
+                    	<div>未审核</div>
+                    </td>   
+                    <td width="7%">
+                    	<div><a href="" class="text-warning opear">重新配置</a><a href="" class="text-danger opear">驳回</a>
+                     </div>
+                    </td>
+                </tr>                                                                             
+                </tbody>
+              </table>
+              </div>
+               </td>
+            </tr>            
+               <tr>
+                <td colspan="6"  style="padding: 0">
+                <div>
+                <table class="combination table-tree">
+                <tbody>
+                <tr class="hd">
+                    <td width="10%" class="toggle">
+                    	<div><img src="images/pt.png" width="19" height="16"> 搜狗</div>
+                    </td>
+                    <td width="8%" class="toggle text-gray">
+                    	<div>正式服 3组</div>
+                    </td>
+                    <td  width="15%" class="toggle text-gray">
+                    	<div>2017-01-01  10:12:59 申请 </div>
+                    </td>
+                    <td width="55%" class="toggle text-gray">
+                    	<div></div>
+                    </td>
+                    <td width="5%" class="toggle text-666">
+                    	<div>已完成</div>
+                    </td>   
+                    <td width="7%">
+                    	<div><a href="" class="text-success opear">批量确定</a><a href="" class="text-danger opear">驳回</a>
+                     </div>
+                    </td>
+                </tr>
+                <tr class="bm">
+                    <td width="10%">
+                    	<div></div>
+                    </td>
+                    <td width="8%" class="text-gray">
+                    	<div>正式服 3组</div>
+                    </td>
+                    <td  width="15%" class="text-gray">
+                    	<div>2017-01-01  10:12:59 开启<a href="javascript:void(0)" onclick="seropen();"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></div>
+                    </td>
+                    <td width="55%" class="text-gray">
+                    	<div>机房： 
+                    		<select class="sel1">
+                    		<option value="">机房1</option>
+                    	    </select>
+                    	    &nbsp;&nbsp;&nbsp;机器： 
+                    		<select class="sel1">
+                    		<option value="">m1（10/10）</option>
+                    	    </select>
+                    	    &nbsp;&nbsp;&nbsp;服务器端口： 
+                    		<select class="sel1">
+                    		<option value="">10001-3306</option>
+                    	    </select>
+                    </div>
+                    </td>
+                    <td width="5%" class="text-danger">
+                    	<div>未审核</div>
+                    </td>   
+                    <td width="7%">
+                    	<div><a href="" class="text-warning opear">重新配置</a><a href="" class="text-danger opear">驳回</a>
+                     </div>
+                    </td>
+                </tr> 
+                 <tr class="bm">
+                    <td width="10%">
+                    	<div></div>
+                    </td>
+                    <td width="8%" class="text-gray">
+                    	<div>正式服 3组</div>
+                    </td>
+                    <td  width="15%" class="text-gray">
+                    	<div>2017-01-01  10:12:59 开启<a href="javascript:void(0)" onclick="seropen();"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></div>
+                    </td>
+                    <td width="55%" class="text-gray">
+                    	<div>机房： 
+                    		<select class="sel1">
+                    		<option value="">机房1</option>
+                    	    </select>
+                    	    &nbsp;&nbsp;&nbsp;机器： 
+                    		<select class="sel1">
+                    		<option value="">m1（10/10）</option>
+                    	    </select>
+                    	    &nbsp;&nbsp;&nbsp;服务器端口： 
+                    		<select class="sel1">
+                    		<option value="">10001-3306</option>
+                    	    </select>
+                    </div>
+                    </td>
+                    <td width="5%" class="text-danger">
+                    	<div>未审核</div>
+                    </td>   
+                    <td width="7%">
+                    	<div><a href="" class="text-warning opear">重新配置</a><a href="" class="text-danger opear">驳回</a>
+                     </div>
+                    </td>
+                </tr>                                                                             
+                </tbody>
+              </table>
+              </div>
+               </td>
+            </tr> 
+
+                 <tr>
+                <td colspan="6"  style="padding: 0">
+                <div>
+                <table class="combination table-tree">
+                <tbody>
+                <tr class="hd">
+                    <td width="10%" class="toggle">
+                    	<div><img src="images/pt.png" width="19" height="16"> 搜狗</div>
+                    </td>
+                    <td width="8%" class="toggle text-gray">
+                    	<div>正式服 3组</div>
+                    </td>
+                    <td  width="15%" class="toggle text-gray">
+                    	<div>2017-01-01  10:12:59 申请 </div>
+                    </td>
+                    <td width="55%" class="toggle text-gray">
+                    	<div></div>
+                    </td>
+                    <td width="5%" class="toggle text-666">
+                    	<div>已完成</div>
+                    </td>   
+                    <td width="7%">
+                    	<div><a href="" class="text-success opear">批量确定</a><a href="" class="text-danger opear">驳回</a>
+                     </div>
+                    </td>
+                </tr>
+                <tr class="bm">
+                    <td width="10%">
+                    	<div></div>
+                    </td>
+                    <td width="8%" class="text-gray">
+                    	<div>正式服 3组</div>
+                    </td>
+                    <td  width="15%" class="text-gray">
+                    	<div>2017-01-01  10:12:59 开启<a href="javascript:void(0)" onclick="seropen();"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></div>
+                    </td>
+                    <td width="55%" class="text-gray">
+                    	<div>机房： 
+                    		<select class="sel1">
+                    		<option value="">机房1</option>
+                    	    </select>
+                    	    &nbsp;&nbsp;&nbsp;机器： 
+                    		<select class="sel1">
+                    		<option value="">m1（10/10）</option>
+                    	    </select>
+                    	    &nbsp;&nbsp;&nbsp;服务器端口： 
+                    		<select class="sel1">
+                    		<option value="">10001-3306</option>
+                    	    </select>
+                    </div>
+                    </td>
+                    <td width="5%" class="text-danger">
+                    	<div>未审核</div>
+                    </td>   
+                    <td width="7%">
+                    	<div><a href="" class="text-warning opear">重新配置</a><a href="" class="text-danger opear">驳回</a>
+                     </div>
+                    </td>
+                </tr> 
+                 <tr class="bm">
+                    <td width="10%">
+                    	<div></div>
+                    </td>
+                    <td width="8%" class="text-gray">
+                    	<div>正式服 3组</div>
+                    </td>
+                    <td  width="15%" class="text-gray">
+                    	<div>2017-01-01  10:12:59 开启<a href="javascript:void(0)" onclick="seropen();"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></div>
+                    </td>
+                    <td width="55%" class="text-gray">
+                    	<div>机房： 
+                    		<select class="sel1">
+                    		<option value="">机房1</option>
+                    	    </select>
+                    	    &nbsp;&nbsp;&nbsp;机器： 
+                    		<select class="sel1">
+                    		<option value="">m1（10/10）</option>
+                    	    </select>
+                    	    &nbsp;&nbsp;&nbsp;服务器端口： 
+                    		<select class="sel1">
+                    		<option value="">10001-3306</option>
+                    	    </select>
+                    </div>
+                    </td>
+                    <td width="5%" class="text-danger">
+                    	<div>未审核</div>
+                    </td>   
+                    <td width="7%">
+                    	<div><a href="" class="text-warning opear">重新配置</a><a href="" class="text-danger opear">驳回</a>
+                     </div>
+                    </td>
+                </tr>                                                                             
+                </tbody>
+              </table>
+              </div>
+               </td>
+            </tr>  
+
+               <tr>
+                <td colspan="6"  style="padding: 0">
+                <div>
+                <table class="combination table-tree">
+                <tbody>
+                <tr class="hd">
+                    <td width="10%" class="toggle">
+                    	<div><img src="images/pt.png" width="19" height="16"> 搜狗</div>
+                    </td>
+                    <td width="8%" class="toggle text-gray">
+                    	<div>正式服 3组</div>
+                    </td>
+                    <td  width="15%" class="toggle text-gray">
+                    	<div>2017-01-01  10:12:59 申请 </div>
+                    </td>
+                    <td width="55%" class="toggle text-gray">
+                    	<div></div>
+                    </td>
+                    <td width="5%" class="toggle text-666">
+                    	<div>已完成</div>
+                    </td>   
+                    <td width="7%">
+                    	<div><a href="" class="text-success opear">批量确定</a><a href="" class="text-danger opear">驳回</a>
+                     </div>
+                    </td>
+                </tr>
+                <tr class="bm">
+                    <td width="10%">
+                    	<div></div>
+                    </td>
+                    <td width="8%" class="text-gray">
+                    	<div>正式服 3组</div>
+                    </td>
+                    <td  width="15%" class="text-gray">
+                    	<div>2017-01-01  10:12:59 开启<a href="javascript:void(0)" onclick="seropen();"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></div>
+                    </td>
+                    <td width="55%" class="text-gray">
+                    	<div>机房： 
+                    		<select class="sel1">
+                    		<option value="">机房1</option>
+                    	    </select>
+                    	    &nbsp;&nbsp;&nbsp;机器： 
+                    		<select class="sel1">
+                    		<option value="">m1（10/10）</option>
+                    	    </select>
+                    	    &nbsp;&nbsp;&nbsp;服务器端口： 
+                    		<select class="sel1">
+                    		<option value="">10001-3306</option>
+                    	    </select>
+                    </div>
+                    </td>
+                    <td width="5%" class="text-danger">
+                    	<div>未审核</div>
+                    </td>   
+                    <td width="7%">
+                    	<div><a href="" class="text-warning opear">重新配置</a><a href="" class="text-danger opear">驳回</a>
+                     </div>
+                    </td>
+                </tr> 
+                 <tr class="bm">
+                    <td width="10%">
+                    	<div></div>
+                    </td>
+                    <td width="8%" class="text-gray">
+                    	<div>正式服 3组</div>
+                    </td>
+                    <td  width="15%" class="text-gray">
+                    	<div>2017-01-01  10:12:59 开启<a href="javascript:void(0)" onclick="seropen();"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></div>
+                    </td>
+                    <td width="55%" class="text-gray">
+                    	<div>机房： 
+                    		<select class="sel1">
+                    		<option value="">机房1</option>
+                    	    </select>
+                    	    &nbsp;&nbsp;&nbsp;机器： 
+                    		<select class="sel1">
+                    		<option value="">m1（10/10）</option>
+                    	    </select>
+                    	    &nbsp;&nbsp;&nbsp;服务器端口： 
+                    		<select class="sel1">
+                    		<option value="">10001-3306</option>
+                    	    </select>
+                    </div>
+                    </td>
+                    <td width="5%" class="text-danger">
+                    	<div>未审核</div>
+                    </td>   
+                    <td width="7%">
+                    	<div><a href="" class="text-warning opear">重新配置</a><a href="" class="text-danger opear">驳回</a>
+                     </div>
+                    </td>
+                </tr>                                                                             
+                </tbody>
+              </table>
+              </div>
+               </td>
+            </tr> 
+
+               <tr>
+                <td colspan="6"  style="padding: 0">
+                <div>
+                <table class="combination table-tree">
+                <tbody>
+                <tr class="hd">
+                    <td width="10%" class="toggle">
+                    	<div><img src="images/pt.png" width="19" height="16"> 搜狗</div>
+                    </td>
+                    <td width="8%" class="toggle text-gray">
+                    	<div>正式服 3组</div>
+                    </td>
+                    <td  width="15%" class="toggle text-gray">
+                    	<div>2017-01-01  10:12:59 申请 </div>
+                    </td>
+                    <td width="55%" class="toggle text-gray">
+                    	<div></div>
+                    </td>
+                    <td width="5%" class="toggle text-666">
+                    	<div>已完成</div>
+                    </td>   
+                    <td width="7%">
+                    	<div><a href="" class="text-success opear">批量确定</a><a href="" class="text-danger opear">驳回</a>
+                     </div>
+                    </td>
+                </tr>
+                <tr class="bm">
+                    <td width="10%">
+                    	<div></div>
+                    </td>
+                    <td width="8%" class="text-gray">
+                    	<div>正式服 3组</div>
+                    </td>
+                    <td  width="15%" class="text-gray">
+                    	<div>2017-01-01  10:12:59 开启<a href="javascript:void(0)" onclick="seropen();"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></div>
+                    </td>
+                    <td width="55%" class="text-gray">
+                    	<div>机房： 
+                    		<select class="sel1">
+                    		<option value="">机房1</option>
+                    	    </select>
+                    	    &nbsp;&nbsp;&nbsp;机器： 
+                    		<select class="sel1">
+                    		<option value="">m1（10/10）</option>
+                    	    </select>
+                    	    &nbsp;&nbsp;&nbsp;服务器端口： 
+                    		<select class="sel1">
+                    		<option value="">10001-3306</option>
+                    	    </select>
+                    </div>
+                    </td>
+                    <td width="5%" class="text-danger">
+                    	<div>未审核</div>
+                    </td>   
+                    <td width="7%">
+                    	<div><a href="" class="text-warning opear">重新配置</a><a href="" class="text-danger opear">驳回</a>
+                     </div>
+                    </td>
+                </tr> 
+                 <tr class="bm">
+                    <td width="10%">
+                    	<div></div>
+                    </td>
+                    <td width="8%" class="text-gray">
+                    	<div>正式服 3组</div>
+                    </td>
+                    <td  width="15%" class="text-gray">
+                    	<div>2017-01-01  10:12:59 开启<a href="javascript:void(0)" onclick="seropen();"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></div>
+                    </td>
+                    <td width="55%" class="text-gray">
+                    	<div>机房： 
+                    		<select class="sel1">
+                    		<option value="">机房1</option>
+                    	    </select>
+                    	    &nbsp;&nbsp;&nbsp;机器： 
+                    		<select class="sel1">
+                    		<option value="">m1（10/10）</option>
+                    	    </select>
+                    	    &nbsp;&nbsp;&nbsp;服务器端口： 
+                    		<select class="sel1">
+                    		<option value="">10001-3306</option>
+                    	    </select>
+                    </div>
+                    </td>
+                    <td width="5%" class="text-danger">
+                    	<div>未审核</div>
+                    </td>   
+                    <td width="7%">
+                    	<div><a href="" class="text-warning opear">重新配置</a><a href="" class="text-danger opear">驳回</a>
+                     </div>
+                    </td>
+                </tr>                                                                             
+                </tbody>
+              </table>
+              </div>
+               </td>
+            </tr> 
+               <tr>
+                <td colspan="6"  style="padding: 0">
+                <div>
+                <table class="combination table-tree">
+                <tbody>
+                <tr class="hd">
+                    <td width="10%" class="toggle">
+                    	<div><img src="images/pt.png" width="19" height="16"> 搜狗</div>
+                    </td>
+                    <td width="8%" class="toggle text-gray">
+                    	<div>正式服 3组</div>
+                    </td>
+                    <td  width="15%" class="toggle text-gray">
+                    	<div>2017-01-01  10:12:59 申请 </div>
+                    </td>
+                    <td width="55%" class="toggle text-gray">
+                    	<div></div>
+                    </td>
+                    <td width="5%" class="toggle text-666">
+                    	<div>已完成</div>
+                    </td>   
+                    <td width="7%">
+                    	<div><a href="" class="text-success opear">批量确定</a><a href="" class="text-danger opear">驳回</a>
+                     </div>
+                    </td>
+                </tr>
+                <tr class="bm">
+                    <td width="10%">
+                    	<div></div>
+                    </td>
+                    <td width="8%" class="text-gray">
+                    	<div>正式服 3组</div>
+                    </td>
+                    <td  width="15%" class="text-gray">
+                    	<div>2017-01-01  10:12:59 开启<a href="javascript:void(0)" onclick="seropen();"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></div>
+                    </td>
+                    <td width="55%" class="text-gray">
+                    	<div>机房： 
+                    		<select class="sel1">
+                    		<option value="">机房1</option>
+                    	    </select>
+                    	    &nbsp;&nbsp;&nbsp;机器： 
+                    		<select class="sel1">
+                    		<option value="">m1（10/10）</option>
+                    	    </select>
+                    	    &nbsp;&nbsp;&nbsp;服务器端口： 
+                    		<select class="sel1">
+                    		<option value="">10001-3306</option>
+                    	    </select>
+                    </div>
+                    </td>
+                    <td width="5%" class="text-danger">
+                    	<div>未审核</div>
+                    </td>   
+                    <td width="7%">
+                    	<div><a href="" class="text-warning opear">重新配置</a><a href="" class="text-danger opear">驳回</a>
+                     </div>
+                    </td>
+                </tr> 
+                 <tr class="bm">
+                    <td width="10%">
+                    	<div></div>
+                    </td>
+                    <td width="8%" class="text-gray">
+                    	<div>正式服 3组</div>
+                    </td>
+                    <td  width="15%" class="text-gray">
+                    	<div>2017-01-01  10:12:59 开启<a href="javascript:void(0)" onclick="seropen();"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></div>
+                    </td>
+                    <td width="55%" class="text-gray">
+                    	<div>机房： 
+                    		<select class="sel1">
+                    		<option value="">机房1</option>
+                    	    </select>
+                    	    &nbsp;&nbsp;&nbsp;机器： 
+                    		<select class="sel1">
+                    		<option value="">m1（10/10）</option>
+                    	    </select>
+                    	    &nbsp;&nbsp;&nbsp;服务器端口： 
+                    		<select class="sel1">
+                    		<option value="">10001-3306</option>
+                    	    </select>
+                    </div>
+                    </td>
+                    <td width="5%" class="text-danger">
+                    	<div>未审核</div>
+                    </td>   
+                    <td width="7%">
+                    	<div><a href="" class="text-warning opear">重新配置</a><a href="" class="text-danger opear">驳回</a>
+                     </div>
+                    </td>
+                </tr>                                                                             
+                </tbody>
+              </table>
+              </div>
+               </td>
+            </tr> 
+
+               <tr>
+                <td colspan="6"  style="padding: 0">
+                <div>
+                <table class="combination table-tree">
+                <tbody>
+                <tr class="hd">
+                    <td width="10%" class="toggle">
+                    	<div><img src="images/pt.png" width="19" height="16"> 搜狗</div>
+                    </td>
+                    <td width="8%" class="toggle text-gray">
+                    	<div>正式服 3组</div>
+                    </td>
+                    <td  width="15%" class="toggle text-gray">
+                    	<div>2017-01-01  10:12:59 申请 </div>
+                    </td>
+                    <td width="55%" class="toggle text-gray">
+                    	<div></div>
+                    </td>
+                    <td width="5%" class="toggle text-666">
+                    	<div>已完成</div>
+                    </td>   
+                    <td width="7%">
+                    	<div><a href="" class="text-success opear">批量确定</a><a href="" class="text-danger opear">驳回</a>
+                     </div>
+                    </td>
+                </tr>
+                <tr class="bm">
+                    <td width="10%">
+                    	<div></div>
+                    </td>
+                    <td width="8%" class="text-gray">
+                    	<div>正式服 3组</div>
+                    </td>
+                    <td  width="15%" class="text-gray">
+                    	<div>2017-01-01  10:12:59 开启<a href="javascript:void(0)" onclick="seropen();"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></div>
+                    </td>
+                    <td width="55%" class="text-gray">
+                    	<div>机房： 
+                    		<select class="sel1">
+                    		<option value="">机房1</option>
+                    	    </select>
+                    	    &nbsp;&nbsp;&nbsp;机器： 
+                    		<select class="sel1">
+                    		<option value="">m1（10/10）</option>
+                    	    </select>
+                    	    &nbsp;&nbsp;&nbsp;服务器端口： 
+                    		<select class="sel1">
+                    		<option value="">10001-3306</option>
+                    	    </select>
+                    </div>
+                    </td>
+                    <td width="5%" class="text-danger">
+                    	<div>未审核</div>
+                    </td>   
+                    <td width="7%">
+                    	<div><a href="" class="text-warning opear">重新配置</a><a href="" class="text-danger opear">驳回</a>
+                     </div>
+                    </td>
+                </tr> 
+                 <tr class="bm">
+                    <td width="10%">
+                    	<div></div>
+                    </td>
+                    <td width="8%" class="text-gray">
+                    	<div>正式服 3组</div>
+                    </td>
+                    <td  width="15%" class="text-gray">
+                    	<div>2017-01-01  10:12:59 开启<a href="javascript:void(0)" onclick="seropen();"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></div>
+                    </td>
+                    <td width="55%" class="text-gray">
+                    	<div>机房： 
+                    		<select class="sel1">
+                    		<option value="">机房1</option>
+                    	    </select>
+                    	    &nbsp;&nbsp;&nbsp;机器： 
+                    		<select class="sel1">
+                    		<option value="">m1（10/10）</option>
+                    	    </select>
+                    	    &nbsp;&nbsp;&nbsp;服务器端口： 
+                    		<select class="sel1">
+                    		<option value="">10001-3306</option>
+                    	    </select>
+                    </div>
+                    </td>
+                    <td width="5%" class="text-danger">
+                    	<div>未审核</div>
+                    </td>   
+                    <td width="7%">
+                    	<div><a href="" class="text-warning opear">重新配置</a><a href="" class="text-danger opear">驳回</a>
+                     </div>
+                    </td>
+                </tr>                                                                             
+                </tbody>
+              </table>
+              </div>
+               </td>
+            </tr> 
+
+
+               <tr>
+                <td colspan="6"  style="padding: 0">
+                <div>
+                <table class="combination table-tree">
+                <tbody>
+                <tr class="hd">
+                    <td width="10%" class="toggle">
+                    	<div><img src="images/pt.png" width="19" height="16"> 搜狗</div>
+                    </td>
+                    <td width="8%" class="toggle text-gray">
+                    	<div>正式服 3组</div>
+                    </td>
+                    <td  width="15%" class="toggle text-gray">
+                    	<div>2017-01-01  10:12:59 申请 </div>
+                    </td>
+                    <td width="55%" class="toggle text-gray">
+                    	<div></div>
+                    </td>
+                    <td width="5%" class="toggle text-666">
+                    	<div>已完成</div>
+                    </td>   
+                    <td width="7%">
+                    	<div><a href="" class="text-success opear">批量确定</a><a href="" class="text-danger opear">驳回</a>
+                     </div>
+                    </td>
+                </tr>
+                <tr class="bm">
+                    <td width="10%">
+                    	<div></div>
+                    </td>
+                    <td width="8%" class="text-gray">
+                    	<div>正式服 3组</div>
+                    </td>
+                    <td  width="15%" class="text-gray">
+                    	<div>2017-01-01  10:12:59 开启<a href="javascript:void(0)" onclick="seropen();"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></div>
+                    </td>
+                    <td width="55%" class="text-gray">
+                    	<div>机房： 
+                    		<select class="sel1">
+                    		<option value="">机房1</option>
+                    	    </select>
+                    	    &nbsp;&nbsp;&nbsp;机器： 
+                    		<select class="sel1">
+                    		<option value="">m1（10/10）</option>
+                    	    </select>
+                    	    &nbsp;&nbsp;&nbsp;服务器端口： 
+                    		<select class="sel1">
+                    		<option value="">10001-3306</option>
+                    	    </select>
+                    </div>
+                    </td>
+                    <td width="5%" class="text-danger">
+                    	<div>未审核</div>
+                    </td>   
+                    <td width="7%">
+                    	<div><a href="" class="text-warning opear">重新配置</a><a href="" class="text-danger opear">驳回</a>
+                     </div>
+                    </td>
+                </tr> 
+                 <tr class="bm">
+                    <td width="10%">
+                    	<div></div>
+                    </td>
+                    <td width="8%" class="text-gray">
+                    	<div>正式服 3组</div>
+                    </td>
+                    <td  width="15%" class="text-gray">
+                    	<div>2017-01-01  10:12:59 开启<a href="javascript:void(0)" onclick="seropen();"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></div>
+                    </td>
+                    <td width="55%" class="text-gray">
+                    	<div>机房： 
+                    		<select class="sel1">
+                    		<option value="">机房1</option>
+                    	    </select>
+                    	    &nbsp;&nbsp;&nbsp;机器： 
+                    		<select class="sel1">
+                    		<option value="">m1（10/10）</option>
+                    	    </select>
+                    	    &nbsp;&nbsp;&nbsp;服务器端口： 
+                    		<select class="sel1">
+                    		<option value="">10001-3306</option>
+                    	    </select>
+                    </div>
+                    </td>
+                    <td width="5%" class="text-danger">
+                    	<div>未审核</div>
+                    </td>   
+                    <td width="7%">
+                    	<div><a href="" class="text-warning opear">重新配置</a><a href="" class="text-danger opear">驳回</a>
+                     </div>
+                    </td>
+                </tr>                                                                             
+                </tbody>
+              </table>
+              </div>
+               </td>
+            </tr> 
+
+
+               <tr>
+                <td colspan="6"  style="padding: 0">
+                <div>
+                <table class="combination table-tree">
+                <tbody>
+                <tr class="hd">
+                    <td width="10%" class="toggle">
+                    	<div><img src="images/pt.png" width="19" height="16"> 搜狗</div>
+                    </td>
+                    <td width="8%" class="toggle text-gray">
+                    	<div>正式服 3组</div>
+                    </td>
+                    <td  width="15%" class="toggle text-gray">
+                    	<div>2017-01-01  10:12:59 申请 </div>
+                    </td>
+                    <td width="55%" class="toggle text-gray">
+                    	<div></div>
+                    </td>
+                    <td width="5%" class="toggle text-666">
+                    	<div>已完成</div>
+                    </td>   
+                    <td width="7%">
+                    	<div><a href="" class="text-success opear">批量确定</a><a href="" class="text-danger opear">驳回</a>
+                     </div>
+                    </td>
+                </tr>
+                <tr class="bm">
+                    <td width="10%">
+                    	<div></div>
+                    </td>
+                    <td width="8%" class="text-gray">
+                    	<div>正式服 3组</div>
+                    </td>
+                    <td  width="15%" class="text-gray">
+                    	<div>2017-01-01  10:12:59 开启<a href="javascript:void(0)" onclick="seropen();"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></div>
+                    </td>
+                    <td width="55%" class="text-gray">
+                    	<div>机房： 
+                    		<select class="sel1">
+                    		<option value="">机房1</option>
+                    	    </select>
+                    	    &nbsp;&nbsp;&nbsp;机器： 
+                    		<select class="sel1">
+                    		<option value="">m1（10/10）</option>
+                    	    </select>
+                    	    &nbsp;&nbsp;&nbsp;服务器端口： 
+                    		<select class="sel1">
+                    		<option value="">10001-3306</option>
+                    	    </select>
+                    </div>
+                    </td>
+                    <td width="5%" class="text-danger">
+                    	<div>未审核</div>
+                    </td>   
+                    <td width="7%">
+                    	<div><a href="" class="text-warning opear">重新配置</a><a href="" class="text-danger opear">驳回</a>
+                     </div>
+                    </td>
+                </tr> 
+                 <tr class="bm">
+                    <td width="10%">
+                    	<div></div>
+                    </td>
+                    <td width="8%" class="text-gray">
+                    	<div>正式服 3组</div>
+                    </td>
+                    <td  width="15%" class="text-gray">
+                    	<div>2017-01-01  10:12:59 开启<a href="javascript:void(0)" onclick="seropen();"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></div>
+                    </td>
+                    <td width="55%" class="text-gray">
+                    	<div>机房： 
+                    		<select class="sel1">
+                    		<option value="">机房1</option>
+                    	    </select>
+                    	    &nbsp;&nbsp;&nbsp;机器： 
+                    		<select class="sel1">
+                    		<option value="">m1（10/10）</option>
+                    	    </select>
+                    	    &nbsp;&nbsp;&nbsp;服务器端口： 
+                    		<select class="sel1">
+                    		<option value="">10001-3306</option>
+                    	    </select>
+                    </div>
+                    </td>
+                    <td width="5%" class="text-danger">
+                    	<div>未审核</div>
+                    </td>   
+                    <td width="7%">
+                    	<div><a href="" class="text-warning opear">重新配置</a><a href="" class="text-danger opear">驳回</a>
+                     </div>
+                    </td>
+                </tr>                                                                             
+                </tbody>
+              </table>
+              </div>
+               </td>
+            </tr> 
+
+
+               <tr>
+                <td colspan="6"  style="padding: 0">
+                <div>
+                <table class="combination table-tree">
+                <tbody>
+                <tr class="hd">
+                    <td width="10%" class="toggle">
+                    	<div><img src="images/pt.png" width="19" height="16"> 搜狗</div>
+                    </td>
+                    <td width="8%" class="toggle text-gray">
+                    	<div>正式服 3组</div>
+                    </td>
+                    <td  width="15%" class="toggle text-gray">
+                    	<div>2017-01-01  10:12:59 申请 </div>
+                    </td>
+                    <td width="55%" class="toggle text-gray">
+                    	<div></div>
+                    </td>
+                    <td width="5%" class="toggle text-666">
+                    	<div>已完成</div>
+                    </td>   
+                    <td width="7%">
+                    	<div><a href="" class="text-success opear">批量确定</a><a href="" class="text-danger opear">驳回</a>
+                     </div>
+                    </td>
+                </tr>
+                <tr class="bm">
+                    <td width="10%">
+                    	<div></div>
+                    </td>
+                    <td width="8%" class="text-gray">
+                    	<div>正式服 3组</div>
+                    </td>
+                    <td  width="15%" class="text-gray">
+                    	<div>2017-01-01  10:12:59 开启<a href="javascript:void(0)" onclick="seropen();"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></div>
+                    </td>
+                    <td width="55%" class="text-gray">
+                    	<div>机房： 
+                    		<select class="sel1">
+                    		<option value="">机房1</option>
+                    	    </select>
+                    	    &nbsp;&nbsp;&nbsp;机器： 
+                    		<select class="sel1">
+                    		<option value="">m1（10/10）</option>
+                    	    </select>
+                    	    &nbsp;&nbsp;&nbsp;服务器端口： 
+                    		<select class="sel1">
+                    		<option value="">10001-3306</option>
+                    	    </select>
+                    </div>
+                    </td>
+                    <td width="5%" class="text-danger">
+                    	<div>未审核</div>
+                    </td>   
+                    <td width="7%">
+                    	<div><a href="" class="text-warning opear">重新配置</a><a href="" class="text-danger opear">驳回</a>
+                     </div>
+                    </td>
+                </tr> 
+                 <tr class="bm">
+                    <td width="10%">
+                    	<div></div>
+                    </td>
+                    <td width="8%" class="text-gray">
+                    	<div>正式服 3组</div>
+                    </td>
+                    <td  width="15%" class="text-gray">
+                    	<div>2017-01-01  10:12:59 开启<a href="javascript:void(0)" onclick="seropen();"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></div>
+                    </td>
+                    <td width="55%" class="text-gray">
+                    	<div>机房： 
+                    		<select class="sel1">
+                    		<option value="">机房1</option>
+                    	    </select>
+                    	    &nbsp;&nbsp;&nbsp;机器： 
+                    		<select class="sel1">
+                    		<option value="">m1（10/10）</option>
+                    	    </select>
+                    	    &nbsp;&nbsp;&nbsp;服务器端口： 
+                    		<select class="sel1">
+                    		<option value="">10001-3306</option>
+                    	    </select>
+                    </div>
+                    </td>
+                    <td width="5%" class="text-danger">
+                    	<div>未审核</div>
+                    </td>   
+                    <td width="7%">
+                    	<div><a href="" class="text-warning opear">重新配置</a><a href="" class="text-danger opear">驳回</a>
+                     </div>
+                    </td>
+                </tr>                                                                             
+                </tbody>
+              </table>
+              </div>
+               </td>
+            </tr> 
+
+
+               <tr>
+                <td colspan="6"  style="padding: 0">
+                <div>
+                <table class="combination table-tree">
+                <tbody>
+                <tr class="hd">
+                    <td width="10%" class="toggle">
+                    	<div><img src="images/pt.png" width="19" height="16"> 搜狗</div>
+                    </td>
+                    <td width="8%" class="toggle text-gray">
+                    	<div>正式服 3组</div>
+                    </td>
+                    <td  width="15%" class="toggle text-gray">
+                    	<div>2017-01-01  10:12:59 申请 </div>
+                    </td>
+                    <td width="55%" class="toggle text-gray">
+                    	<div></div>
+                    </td>
+                    <td width="5%" class="toggle text-666">
+                    	<div>已完成</div>
+                    </td>   
+                    <td width="7%">
+                    	<div><a href="" class="text-success opear">批量确定</a><a href="" class="text-danger opear">驳回</a>
+                     </div>
+                    </td>
+                </tr>
+                <tr class="bm">
+                    <td width="10%">
+                    	<div></div>
+                    </td>
+                    <td width="8%" class="text-gray">
+                    	<div>正式服 3组</div>
+                    </td>
+                    <td  width="15%" class="text-gray">
+                    	<div>2017-01-01  10:12:59 开启<a href="javascript:void(0)" onclick="seropen();"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></div>
+                    </td>
+                    <td width="55%" class="text-gray">
+                    	<div>机房： 
+                    		<select class="sel1">
+                    		<option value="">机房1</option>
+                    	    </select>
+                    	    &nbsp;&nbsp;&nbsp;机器： 
+                    		<select class="sel1">
+                    		<option value="">m1（10/10）</option>
+                    	    </select>
+                    	    &nbsp;&nbsp;&nbsp;服务器端口： 
+                    		<select class="sel1">
+                    		<option value="">10001-3306</option>
+                    	    </select>
+                    </div>
+                    </td>
+                    <td width="5%" class="text-danger">
+                    	<div>未审核</div>
+                    </td>   
+                    <td width="7%">
+                    	<div><a href="" class="text-warning opear">重新配置</a><a href="" class="text-danger opear">驳回</a>
+                     </div>
+                    </td>
+                </tr> 
+                 <tr class="bm">
+                    <td width="10%">
+                    	<div></div>
+                    </td>
+                    <td width="8%" class="text-gray">
+                    	<div>正式服 3组</div>
+                    </td>
+                    <td  width="15%" class="text-gray">
+                    	<div>2017-01-01  10:12:59 开启<a href="javascript:void(0)" onclick="seropen();"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></div>
+                    </td>
+                    <td width="55%" class="text-gray">
+                    	<div>机房： 
+                    		<select class="sel1">
+                    		<option value="">机房1</option>
+                    	    </select>
+                    	    &nbsp;&nbsp;&nbsp;机器： 
+                    		<select class="sel1">
+                    		<option value="">m1（10/10）</option>
+                    	    </select>
+                    	    &nbsp;&nbsp;&nbsp;服务器端口： 
+                    		<select class="sel1">
+                    		<option value="">10001-3306</option>
+                    	    </select>
+                    </div>
+                    </td>
+                    <td width="5%" class="text-danger">
+                    	<div>未审核</div>
+                    </td>   
+                    <td width="7%">
+                    	<div><a href="" class="text-warning opear">重新配置</a><a href="" class="text-danger opear">驳回</a>
+                     </div>
+                    </td>
+                </tr>                                                                             
+                </tbody>
+              </table>
+              </div>
+               </td>
+            </tr> 
+               <tr>
+                <td colspan="6"  style="padding: 0">
+                <div>
+                <table class="combination table-tree">
+                <tbody>
+                <tr class="hd">
+                    <td width="10%" class="toggle">
+                    	<div><img src="images/pt.png" width="19" height="16"> 搜狗</div>
+                    </td>
+                    <td width="8%" class="toggle text-gray">
+                    	<div>正式服 3组</div>
+                    </td>
+                    <td  width="15%" class="toggle text-gray">
+                    	<div>2017-01-01  10:12:59 申请 </div>
+                    </td>
+                    <td width="55%" class="toggle text-gray">
+                    	<div></div>
+                    </td>
+                    <td width="5%" class="toggle text-666">
+                    	<div>已完成</div>
+                    </td>   
+                    <td width="7%">
+                    	<div><a href="" class="text-success opear">批量确定</a><a href="" class="text-danger opear">驳回</a>
+                     </div>
+                    </td>
+                </tr>
+                <tr class="bm">
+                    <td width="10%">
+                    	<div></div>
+                    </td>
+                    <td width="8%" class="text-gray">
+                    	<div>正式服 3组</div>
+                    </td>
+                    <td  width="15%" class="text-gray">
+                    	<div>2017-01-01  10:12:59 开启<a href="javascript:void(0)" onclick="seropen();"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></div>
+                    </td>
+                    <td width="55%" class="text-gray">
+                    	<div>机房： 
+                    		<select class="sel1">
+                    		<option value="">机房1</option>
+                    	    </select>
+                    	    &nbsp;&nbsp;&nbsp;机器： 
+                    		<select class="sel1">
+                    		<option value="">m1（10/10）</option>
+                    	    </select>
+                    	    &nbsp;&nbsp;&nbsp;服务器端口： 
+                    		<select class="sel1">
+                    		<option value="">10001-3306</option>
+                    	    </select>
+                    </div>
+                    </td>
+                    <td width="5%" class="text-danger">
+                    	<div>未审核</div>
+                    </td>   
+                    <td width="7%">
+                    	<div><a href="" class="text-warning opear">重新配置</a><a href="" class="text-danger opear">驳回</a>
+                     </div>
+                    </td>
+                </tr> 
+                 <tr class="bm">
+                    <td width="10%">
+                    	<div></div>
+                    </td>
+                    <td width="8%" class="text-gray">
+                    	<div>正式服 3组</div>
+                    </td>
+                    <td  width="15%" class="text-gray">
+                    	<div>2017-01-01  10:12:59 开启<a href="javascript:void(0)" onclick="seropen();"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></div>
+                    </td>
+                    <td width="55%" class="text-gray">
+                    	<div>机房： 
+                    		<select class="sel1">
+                    		<option value="">机房1</option>
+                    	    </select>
+                    	    &nbsp;&nbsp;&nbsp;机器： 
+                    		<select class="sel1">
+                    		<option value="">m1（10/10）</option>
+                    	    </select>
+                    	    &nbsp;&nbsp;&nbsp;服务器端口： 
+                    		<select class="sel1">
+                    		<option value="">10001-3306</option>
+                    	    </select>
+                    </div>
+                    </td>
+                    <td width="5%" class="text-danger">
+                    	<div>未审核</div>
+                    </td>   
+                    <td width="7%">
+                    	<div><a href="" class="text-warning opear">重新配置</a><a href="" class="text-danger opear">驳回</a>
+                     </div>
+                    </td>
+                </tr>                                                                             
+                </tbody>
+              </table>
+              </div>
+               </td>
+            </tr> 
+               <tr>
+                <td colspan="6"  style="padding: 0">
+                <div>
+                <table class="combination table-tree">
+                <tbody>
+                <tr class="hd">
+                    <td width="10%" class="toggle">
+                    	<div><img src="images/pt.png" width="19" height="16"> 搜狗</div>
+                    </td>
+                    <td width="8%" class="toggle text-gray">
+                    	<div>正式服 3组</div>
+                    </td>
+                    <td  width="15%" class="toggle text-gray">
+                    	<div>2017-01-01  10:12:59 申请 </div>
+                    </td>
+                    <td width="55%" class="toggle text-gray">
+                    	<div></div>
+                    </td>
+                    <td width="5%" class="toggle text-666">
+                    	<div>已完成</div>
+                    </td>   
+                    <td width="7%">
+                    	<div><a href="" class="text-success opear">批量确定</a><a href="" class="text-danger opear">驳回</a>
+                     </div>
+                    </td>
+                </tr>
+                <tr class="bm">
+                    <td width="10%">
+                    	<div></div>
+                    </td>
+                    <td width="8%" class="text-gray">
+                    	<div>正式服 3组</div>
+                    </td>
+                    <td  width="15%" class="text-gray">
+                    	<div>2017-01-01  10:12:59 开启<a href="javascript:void(0)" onclick="seropen();"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></div>
+                    </td>
+                    <td width="55%" class="text-gray">
+                    	<div>机房： 
+                    		<select class="sel1">
+                    		<option value="">机房1</option>
+                    	    </select>
+                    	    &nbsp;&nbsp;&nbsp;机器： 
+                    		<select class="sel1">
+                    		<option value="">m1（10/10）</option>
+                    	    </select>
+                    	    &nbsp;&nbsp;&nbsp;服务器端口： 
+                    		<select class="sel1">
+                    		<option value="">10001-3306</option>
+                    	    </select>
+                    </div>
+                    </td>
+                    <td width="5%" class="text-danger">
+                    	<div>未审核</div>
+                    </td>   
+                    <td width="7%">
+                    	<div><a href="" class="text-warning opear">重新配置</a><a href="" class="text-danger opear">驳回</a>
+                     </div>
+                    </td>
+                </tr> 
+                 <tr class="bm">
+                    <td width="10%">
+                    	<div></div>
+                    </td>
+                    <td width="8%" class="text-gray">
+                    	<div>正式服 3组</div>
+                    </td>
+                    <td  width="15%" class="text-gray">
+                    	<div>2017-01-01  10:12:59 开启<a href="javascript:void(0)" onclick="seropen();"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></div>
+                    </td>
+                    <td width="55%" class="text-gray">
+                    	<div>机房： 
+                    		<select class="sel1">
+                    		<option value="">机房1</option>
+                    	    </select>
+                    	    &nbsp;&nbsp;&nbsp;机器： 
+                    		<select class="sel1">
+                    		<option value="">m1（10/10）</option>
+                    	    </select>
+                    	    &nbsp;&nbsp;&nbsp;服务器端口： 
+                    		<select class="sel1">
+                    		<option value="">10001-3306</option>
+                    	    </select>
+                    </div>
+                    </td>
+                    <td width="5%" class="text-danger">
+                    	<div>未审核</div>
+                    </td>   
+                    <td width="7%">
+                    	<div><a href="" class="text-warning opear">重新配置</a><a href="" class="text-danger opear">驳回</a>
+                     </div>
+                    </td>
+                </tr>                                                                             
+                </tbody>
+              </table>
+              </div>
+               </td>
+            </tr> 
+
+               <tr>
+                <td colspan="6"  style="padding: 0">
+                <div>
+                <table class="combination table-tree">
+                <tbody>
+                <tr class="hd">
+                    <td width="10%" class="toggle">
+                    	<div><img src="images/pt.png" width="19" height="16"> 搜狗</div>
+                    </td>
+                    <td width="8%" class="toggle text-gray">
+                    	<div>正式服 3组</div>
+                    </td>
+                    <td  width="15%" class="toggle text-gray">
+                    	<div>2017-01-01  10:12:59 申请 </div>
+                    </td>
+                    <td width="55%" class="toggle text-gray">
+                    	<div></div>
+                    </td>
+                    <td width="5%" class="toggle text-666">
+                    	<div>已完成</div>
+                    </td>   
+                    <td width="7%">
+                    	<div><a href="" class="text-success opear">批量确定</a><a href="" class="text-danger opear">驳回</a>
+                     </div>
+                    </td>
+                </tr>
+                <tr class="bm">
+                    <td width="10%">
+                    	<div></div>
+                    </td>
+                    <td width="8%" class="text-gray">
+                    	<div>正式服 3组</div>
+                    </td>
+                    <td  width="15%" class="text-gray">
+                    	<div>2017-01-01  10:12:59 开启<a href="javascript:void(0)" onclick="seropen();"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></div>
+                    </td>
+                    <td width="55%" class="text-gray">
+                    	<div>机房： 
+                    		<select class="sel1">
+                    		<option value="">机房1</option>
+                    	    </select>
+                    	    &nbsp;&nbsp;&nbsp;机器： 
+                    		<select class="sel1">
+                    		<option value="">m1（10/10）</option>
+                    	    </select>
+                    	    &nbsp;&nbsp;&nbsp;服务器端口： 
+                    		<select class="sel1">
+                    		<option value="">10001-3306</option>
+                    	    </select>
+                    </div>
+                    </td>
+                    <td width="5%" class="text-danger">
+                    	<div>未审核</div>
+                    </td>   
+                    <td width="7%">
+                    	<div><a href="" class="text-warning opear">重新配置</a><a href="" class="text-danger opear">驳回</a>
+                     </div>
+                    </td>
+                </tr> 
+                 <tr class="bm">
+                    <td width="10%">
+                    	<div></div>
+                    </td>
+                    <td width="8%" class="text-gray">
+                    	<div>正式服 3组</div>
+                    </td>
+                    <td  width="15%" class="text-gray">
+                    	<div>2017-01-01  10:12:59 开启<a href="javascript:void(0)" onclick="seropen();"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></div>
+                    </td>
+                    <td width="55%" class="text-gray">
+                    	<div>机房： 
+                    		<select class="sel1">
+                    		<option value="">机房1</option>
+                    	    </select>
+                    	    &nbsp;&nbsp;&nbsp;机器： 
+                    		<select class="sel1">
+                    		<option value="">m1（10/10）</option>
+                    	    </select>
+                    	    &nbsp;&nbsp;&nbsp;服务器端口： 
+                    		<select class="sel1">
+                    		<option value="">10001-3306</option>
+                    	    </select>
+                    </div>
+                    </td>
+                    <td width="5%" class="text-danger">
+                    	<div>未审核</div>
+                    </td>   
+                    <td width="7%">
+                    	<div><a href="" class="text-warning opear">重新配置</a><a href="" class="text-danger opear">驳回</a>
+                     </div>
+                    </td>
+                </tr>                                                                             
+                </tbody>
+              </table>
+              </div>
+               </td>
+            </tr> 
+
+               <tr>
+                <td colspan="6"  style="padding: 0">
+                <div>
+                <table class="combination table-tree">
+                <tbody>
+                <tr class="hd">
+                    <td width="10%" class="toggle">
+                    	<div><img src="images/pt.png" width="19" height="16"> 搜狗</div>
+                    </td>
+                    <td width="8%" class="toggle text-gray">
+                    	<div>正式服 3组</div>
+                    </td>
+                    <td  width="15%" class="toggle text-gray">
+                    	<div>2017-01-01  10:12:59 申请 </div>
+                    </td>
+                    <td width="55%" class="toggle text-gray">
+                    	<div></div>
+                    </td>
+                    <td width="5%" class="toggle text-666">
+                    	<div>已完成</div>
+                    </td>   
+                    <td width="7%">
+                    	<div><a href="" class="text-success opear">批量确定</a><a href="" class="text-danger opear">驳回</a>
+                     </div>
+                    </td>
+                </tr>
+                <tr class="bm">
+                    <td width="10%">
+                    	<div></div>
+                    </td>
+                    <td width="8%" class="text-gray">
+                    	<div>正式服 3组</div>
+                    </td>
+                    <td  width="15%" class="text-gray">
+                    	<div>2017-01-01  10:12:59 开启<a href="javascript:void(0)" onclick="seropen();"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></div>
+                    </td>
+                    <td width="55%" class="text-gray">
+                    	<div>机房： 
+                    		<select class="sel1">
+                    		<option value="">机房1</option>
+                    	    </select>
+                    	    &nbsp;&nbsp;&nbsp;机器： 
+                    		<select class="sel1">
+                    		<option value="">m1（10/10）</option>
+                    	    </select>
+                    	    &nbsp;&nbsp;&nbsp;服务器端口： 
+                    		<select class="sel1">
+                    		<option value="">10001-3306</option>
+                    	    </select>
+                    </div>
+                    </td>
+                    <td width="5%" class="text-danger">
+                    	<div>未审核</div>
+                    </td>   
+                    <td width="7%">
+                    	<div><a href="" class="text-warning opear">重新配置</a><a href="" class="text-danger opear">驳回</a>
+                     </div>
+                    </td>
+                </tr> 
+                 <tr class="bm">
+                    <td width="10%">
+                    	<div></div>
+                    </td>
+                    <td width="8%" class="text-gray">
+                    	<div>正式服 3组</div>
+                    </td>
+                    <td  width="15%" class="text-gray">
+                    	<div>2017-01-01  10:12:59 开启<a href="javascript:void(0)" onclick="seropen();"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></div>
+                    </td>
+                    <td width="55%" class="text-gray">
+                    	<div>机房： 
+                    		<select class="sel1">
+                    		<option value="">机房1</option>
+                    	    </select>
+                    	    &nbsp;&nbsp;&nbsp;机器： 
+                    		<select class="sel1">
+                    		<option value="">m1（10/10）</option>
+                    	    </select>
+                    	    &nbsp;&nbsp;&nbsp;服务器端口： 
+                    		<select class="sel1">
+                    		<option value="">10001-3306</option>
+                    	    </select>
+                    </div>
+                    </td>
+                    <td width="5%" class="text-danger">
+                    	<div>未审核</div>
+                    </td>   
+                    <td width="7%">
+                    	<div><a href="" class="text-warning opear">重新配置</a><a href="" class="text-danger opear">驳回</a>
+                     </div>
+                    </td>
+                </tr>                                                                             
+                </tbody>
+              </table>
+              </div>
+               </td>
+            </tr> 
+
+                   <tr>
+                <td colspan="6"  style="padding: 0">
+                <div>
+                <table class="combination table-tree">
+                <tbody>
+                <tr class="hd">
+                    <td width="10%" class="toggle">
+                    	<div><img src="images/pt.png" width="19" height="16"> 搜狗</div>
+                    </td>
+                    <td width="8%" class="toggle text-gray">
+                    	<div>正式服 3组</div>
+                    </td>
+                    <td  width="15%" class="toggle text-gray">
+                    	<div>2017-01-01  10:12:59 申请 </div>
+                    </td>
+                    <td width="55%" class="toggle text-gray">
+                    	<div></div>
+                    </td>
+                    <td width="5%" class="toggle text-666">
+                    	<div>已完成</div>
+                    </td>   
+                    <td width="7%">
+                    	<div><a href="" class="text-success opear">批量确定</a><a href="" class="text-danger opear">驳回</a>
+                     </div>
+                    </td>
+                </tr>
+                <tr class="bm">
+                    <td width="10%">
+                    	<div></div>
+                    </td>
+                    <td width="8%" class="text-gray">
+                    	<div>正式服 3组</div>
+                    </td>
+                    <td  width="15%" class="text-gray">
+                    	<div>2017-01-01  10:12:59 开启<a href="javascript:void(0)" onclick="seropen();"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></div>
+                    </td>
+                    <td width="55%" class="text-gray">
+                    	<div>机房： 
+                    		<select class="sel1">
+                    		<option value="">机房1</option>
+                    	    </select>
+                    	    &nbsp;&nbsp;&nbsp;机器： 
+                    		<select class="sel1">
+                    		<option value="">m1（10/10）</option>
+                    	    </select>
+                    	    &nbsp;&nbsp;&nbsp;服务器端口： 
+                    		<select class="sel1">
+                    		<option value="">10001-3306</option>
+                    	    </select>
+                    </div>
+                    </td>
+                    <td width="5%" class="text-danger">
+                    	<div>未审核</div>
+                    </td>   
+                    <td width="7%">
+                    	<div><a href="" class="text-warning opear">重新配置</a><a href="" class="text-danger opear">驳回</a>
+                     </div>
+                    </td>
+                </tr> 
+                 <tr class="bm">
+                    <td width="10%">
+                    	<div></div>
+                    </td>
+                    <td width="8%" class="text-gray">
+                    	<div>正式服 3组</div>
+                    </td>
+                    <td  width="15%" class="text-gray">
+                    	<div>2017-01-01  10:12:59 开启<a href="javascript:void(0)" onclick="seropen();"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></div>
+                    </td>
+                    <td width="55%" class="text-gray">
+                    	<div>机房： 
+                    		<select class="sel1">
+                    		<option value="">机房1</option>
+                    	    </select>
+                    	    &nbsp;&nbsp;&nbsp;机器： 
+                    		<select class="sel1">
+                    		<option value="">m1（10/10）</option>
+                    	    </select>
+                    	    &nbsp;&nbsp;&nbsp;服务器端口： 
+                    		<select class="sel1">
+                    		<option value="">10001-3306</option>
+                    	    </select>
+                    </div>
+                    </td>
+                    <td width="5%" class="text-danger">
+                    	<div>未审核</div>
+                    </td>   
+                    <td width="7%">
+                    	<div><a href="" class="text-warning opear">重新配置</a><a href="" class="text-danger opear">驳回</a>
+                     </div>
+                    </td>
+                </tr>                                                                             
+                </tbody>
+              </table>
+              </div>
+               </td>
+            </tr>         
+               <tr>
+                <td colspan="6"  style="padding: 0">
+                <div>
+                <table class="combination table-tree">
+                <tbody>
+                <tr class="hd">
+                    <td width="10%" class="toggle">
+                    	<div><img src="images/pt.png" width="19" height="16"> 搜狗</div>
+                    </td>
+                    <td width="8%" class="toggle text-gray">
+                    	<div>正式服 3组</div>
+                    </td>
+                    <td  width="15%" class="toggle text-gray">
+                    	<div>2017-01-01  10:12:59 申请 </div>
+                    </td>
+                    <td width="55%" class="toggle text-gray">
+                    	<div></div>
+                    </td>
+                    <td width="5%" class="toggle text-666">
+                    	<div>已完成</div>
+                    </td>   
+                    <td width="7%">
+                    	<div><a href="" class="text-success opear">批量确定</a><a href="" class="text-danger opear">驳回</a>
+                     </div>
+                    </td>
+                </tr>
+                <tr class="bm">
+                    <td width="10%">
+                    	<div></div>
+                    </td>
+                    <td width="8%" class="text-gray">
+                    	<div>正式服 3组</div>
+                    </td>
+                    <td  width="15%" class="text-gray">
+                    	<div>2017-01-01  10:12:59 开启<a href="javascript:void(0)" onclick="seropen();"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></div>
+                    </td>
+                    <td width="55%" class="text-gray">
+                    	<div>机房： 
+                    		<select class="sel1">
+                    		<option value="">机房1</option>
+                    	    </select>
+                    	    &nbsp;&nbsp;&nbsp;机器： 
+                    		<select class="sel1">
+                    		<option value="">m1（10/10）</option>
+                    	    </select>
+                    	    &nbsp;&nbsp;&nbsp;服务器端口： 
+                    		<select class="sel1">
+                    		<option value="">10001-3306</option>
+                    	    </select>
+                    </div>
+                    </td>
+                    <td width="5%" class="text-danger">
+                    	<div>未审核</div>
+                    </td>   
+                    <td width="7%">
+                    	<div><a href="" class="text-warning opear">重新配置</a><a href="" class="text-danger opear">驳回</a>
+                     </div>
+                    </td>
+                </tr> 
+                 <tr class="bm">
+                    <td width="10%">
+                    	<div></div>
+                    </td>
+                    <td width="8%" class="text-gray">
+                    	<div>正式服 3组</div>
+                    </td>
+                    <td  width="15%" class="text-gray">
+                    	<div>2017-01-01  10:12:59 开启<a href="javascript:void(0)" onclick="seropen();"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></div>
+                    </td>
+                    <td width="55%" class="text-gray">
+                    	<div>机房： 
+                    		<select class="sel1">
+                    		<option value="">机房1</option>
+                    	    </select>
+                    	    &nbsp;&nbsp;&nbsp;机器： 
+                    		<select class="sel1">
+                    		<option value="">m1（10/10）</option>
+                    	    </select>
+                    	    &nbsp;&nbsp;&nbsp;服务器端口： 
+                    		<select class="sel1">
+                    		<option value="">10001-3306</option>
+                    	    </select>
+                    </div>
+                    </td>
+                    <td width="5%" class="text-danger">
+                    	<div>未审核</div>
+                    </td>   
+                    <td width="7%">
+                    	<div><a href="" class="text-warning opear">重新配置</a><a href="" class="text-danger opear">驳回</a>
+                     </div>
+                    </td>
+                </tr>                                                                             
+                </tbody>
+              </table>
+              </div>
+               </td>
+            </tr> 
+                </tbody>
+            </table>
+        </div>
+</div>
+<div class="page-bottom clearfix">
+<div class="pull-right pagination">
+<span class="page-list">每页显示 
+	<span class="btn-group dropup">
+		<button type="button" class="btn btn-default  btn-outline dropdown-toggle" data-toggle="dropdown">
+			<span class="page-size">10</span> 
+			<span class="caret"></span>
+		</button>
+		<ul class="dropdown-menu" role="menu">
+			<li class="active">
+				<a href="javascript:void(0)">10</a>
+			</li>
+			<li>
+				<a href="javascript:void(0)">25</a>
+			</li>
+		</ul>
+	</span> 
+条</span>
+<ul class="pagination pagination-outline">
+    <li class="page-pre"><a href="javascript:void(0)">&laquo;</a></li>
+    <li class="page-number active"><a href="javascript:void(0)">1</a></li>
+    <li class="page-number"><a href="javascript:void(0)">2</a></li>
+    <li class="page-next"><a href="javascript:void(0)">&raquo;</a></li>
+</ul>
+<input class="form-control jump-page" size="2" maxlength="7" type="text" style="width: 40px;">
+<a href="" style="margin-right: 10px;">跳转</a>
+</div>
+</div>
+
+ </div>
+<!-- 全局js -->
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<!--日期-->
+<script type="text/javascript" src="js/date/moment.min.js"></script> 
+<script type="text/javascript" src="js/date/jquery.daterangepicker.js"></script>
+<!--弹窗-->
+<script src="js/layer/layer.js"></script>
+<script type="text/javascript">
+ $('.date-range').dateRangePicker(
+{
+    separator : ' to ',
+     format: 'YYYY-MM-DD',
+     endDate: moment(),
+    getValue: function()
+    {
+
+        if ($('.date-range00').val() && $('.date-range01').val() )
+            return $('.date-range00').val() + ' 至 ' + $('.date-range01').val();
+        else
+            return '';
+    },
+    setValue: function(s,s1,s2)
+    {
+        $('.date-range00').val(s1);
+        $('.date-range01').val(s2);
+    },
+});
+$(function () { $(".popover-options a").popover({
+		html : true 
+	})
+});
+$(".toggle").click(function(){
+    $(this).parent('.hd').siblings('.bm').toggle();
+    $(this).parents('.table-tree').toggleClass('achive');
+})
+$(".grid-tbody").height($(".form-wrapper").height()-150);
+$(window).resize(function(){
+$(".grid-tbody").height($(".form-wrapper").height()-150);
+})
+</script>
+ <script type="text/javascript">
+function seropen() {
+    layer.open({
+    type: 2,
+    title: '区服开启时间',
+    shadeClose: true,
+    btn: ['关闭'],
+    area : ['420px' , '460px'],
+    content: 'seropen-pop.html'
+    });
+}
+</script>
+</body>
+</html>

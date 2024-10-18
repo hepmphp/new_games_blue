@@ -1,0 +1,42 @@
+左边导航点击效果
+
+数据概要
+serveroverview.html 服务器概况
+
+
+在线数据
+
+currentonline.html 当前在线
+
+
+留存数据
+
+totalretention.html总体存留
+creatingsteps.html  创建步骤
+gradedistribution.html 等级分布
+timelength.html 时长分布
+taskdistribution  任务分布
+mapdistribution 地图分布
+
+
+消费分析3
+goldingot元宝去向
+
+
+数据汇总
+rechargecomparison.html充值对比
+
+
+运营功能
+playerquery.html  玩家查询
+nopassword        无密码登录
+rebateslist          元宝申请------返利发放列表
+rebate               元宝申请------发返利
+releaserecords       元宝申请------内部账号发放记录
+applyforgold        元宝申请------内部账号元宝申请
+
+
+
+服务器管理
+
+stopservice.html            停服

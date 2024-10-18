@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="renderer" content="webkit">
+<title>聊天监控</title>
+<meta name="keywords" content="">
+<meta name="description" content="">
+<!--全局样式-->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<link href="css/screen.css" rel="stylesheet">
+<!--图标-->
+<link href="css/font-awesome.min.css" rel="stylesheet">
+<!--表单表格-->
+<link href="js/bootstrap-table/bootstrap-table.min.css" rel="stylesheet">
+<link href="css/form.css" rel="stylesheet">
+<!--日期-->
+<link href="js/date/daterangepicker.css" rel="stylesheet">
+<!--mobile 样式-->
+<link href="css/mobile.css" rel="stylesheet">
+<!--[if lt IE 9]>
+<meta http-equiv="refresh" content="0;ie.html" />
+<script src="js/html5shiv.min.js"></script>
+<script src="js/respond.min.js"></script>
+<![endif]-->
+</head>
+<body class="form-body">
+<div class="form-wrapper">
+<div class="form-item">
+<p class="popover-options">
+	<a href="#" type="button" data-placement="bottom" data-trigger="hover" 
+	   data-container="body" data-toggle="popover" data-content="
+		<p><em>刷新时间：</em>实时</p>
+		<p><em>付费ARPU：</em>总付费金额/总付费人数</p>
+		<p><em>付费ARPU：</em>总付费金额/总付费人数</p>
+		<p><em>付费ARPU：</em>总付费金额/总付费人数</p>
+		<p><em>付费ARPU：</em>总付费金额/总付费人数</p>
+		">
+		<i class="fa fa-question-circle" aria-hidden="true"></i>
+	</a>
+</p>
+<div class="chat-main clearfix">
+	<div class="left">
+ <iframe class="iframe-box" width="100%" height="100%" src="chat-iframe.html" frameborder="0" scrolling="no"></iframe>		
+	</div>
+<!--左边监控记录 end-->
+<div class="right concerns-list">
+	<iframe class="iframe-box" width="100%" height="100%" src="chatlist-iframe.html" frameborder="0" scrolling="no"></iframe>	
+</div>
+</div><!--chat-main end-->
+</div>	
+ </div>
+<!-- 全局js -->
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<!-- Bootstrap table -->
+<script src="js/bootstrap-table/bootstrap-table.min.js"></script>
+<script src="js/bootstrap-table/locale/bootstrap-table-zh-CN.min.js"></script>
+ <script src="js/table-demo.js"></script> 
+ <script src="js/layer/layer.js"></script>
+<!--Marquee无缝滚动-->
+ <script src="js/jquery.liMarquee.js"></script>
+<script type="text/javascript">
+$(function () { $(".popover-options a").popover({
+		html : true 
+	});});
+$(window).resize(function(){
+$(".chat-main").height($(window).height()-20);
+$(".concerns-list").width($('.chat-main').width()-550);
+})
+$(".concerns-list").width($('.chat-main').width()-550);
+$(".chat-main").height($(window).height()-20);
+/*监控记录滚动*/
+$(function(){
+$('.sroll_wrap').liMarquee({
+	direction: 'up'
+});
+$('.stop_sroll').click(function(){
+	if ($(this).hasClass('on')) {
+		$(this).removeClass('on').text('暂停滚动');
+		$('.sroll_wrap').liMarquee('update');
+	}else {
+		$(this).addClass('on').text('恢复滚动');
+		$('.sroll_wrap').liMarquee('pause');
+	}
+})
+})
+</script> 
+</body>
+</html>

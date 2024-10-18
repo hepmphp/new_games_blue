@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="renderer" content="webkit">
+<title>服务器管理</title>
+<meta name="keywords" content="">
+<meta name="description" content="">
+<!--全局样式-->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<link href="css/screen.css" rel="stylesheet">
+<!--图标-->
+<link href="css/font-awesome.min.css" rel="stylesheet">
+<!--导航-->
+<link href="css/nav.css" rel="stylesheet">
+<!--导航-->
+<link href="css/form.css" rel="stylesheet">
+<!--mobile 样式-->
+<link href="css/mobile.css" rel="stylesheet">
+<!--[if lt IE 9]>
+<meta http-equiv="refresh" content="0;ie.html" />
+<script src="js/html5shiv.min.js"></script>
+<script src="js/respond.min.js"></script>
+<![endif]-->
+</head>
+<body class="gray-bg">
+<div class="wrapper"> 
+<div class="navtop clearfix">
+<h1 class="nav-title">游戏管理后台<b></b></h1>
+<div class="navmenu"  id='cssmenu'>
+<ul class="navmenu-item">
+   <li><a href="index.html">单服数据</a></li>
+   <li><a href="index2.html">数据汇总</a></li>
+   <li><a href="index3.html">运营功能</a></li>
+   <li class="active"><a href="index4.html">服务器管理</a></li>
+   <li><a href="index5.html">监控系统</a></li>
+   <li><a href="">系统设置</a></li>
+   <li><a href="">开发工具</a></li>
+</ul>
+</div>
+
+<div class="nav-right">
+Hi! <span class="user-item">admin<i class="fa fa-angle-down" aria-hidden="true"></i>
+	<span class="user-con">
+		<a href="" class="a1">账号修改</a>
+		<a href="" class="a2">安全退出</a>
+	</span>
+</span>
+</div>
+</div>
+<!--导航 end-->
+<div class="Business-back">
+<div class="Business-left left_0 transition clearfix">
+<div class="Website-nav">
+ 网站导航<div class="Slide-left transition"><i class="fa fa-outdent" aria-hidden="true"></div></i>
+</div>
+<ul class="list-unstyled left-Catalog" id="boxscroll">
+   <li class="nav-toggle"><span class="nav-open"><i class="fa fa-bar-chart" aria-hidden="true"></i>服务器管理</span>
+      <ul class="list-unstyled">
+         <li><a class="J_menuItem" href="regionalclothinglist.html">区服列表</a></li>
+          <li><a class="J_menuItem" href="applyprocessing.html">开服申请处理</a><span class="badge pull-right">42</span></li>
+           <li><a class="J_menuItem" href="suitapplication.html">合服申请处理</a><span class="badge pull-right">42</span></li>
+            <li><a class="J_menuItem" href="stopservicelist.html">停服</a></li>
+      </ul>
+   </li>
+   <li class="nav-toggle"><span class="nav-open"><i class="fa fa-bar-chart" aria-hidden="true"></i>返利类管理</span>
+      <ul class="list-unstyled">
+         <li><a class="J_menuItem" href="computerroomlist.html">机房管理</a></li>
+        <li><a class="J_menuItem" href="machinelist.html">机器管理</a></li>
+      </ul>
+   </li>
+</ul>
+</div>
+<!--左边 end-->
+  <div class="Business-right transition clearfix">
+ <iframe id="J_iframe" class="iframe-box" name="J_iframe" width="100%" height="100%" src="regionalclothinglist.html" frameborder="0" data-id="index"></iframe>
+  </div>
+</div>
+
+</div> 
+<!-- 全局js -->
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<!--导航-->
+<script src="js/nav.js"></script>
+<!--滚动条美化-->
+ <script src="js/jquery.nicescroll.js"></script>
+<!--公共部分-->
+<script src="js/common.js"></script>
+ <script>
+     $(document).ready(function() {
+       $("#boxscroll").niceScroll({cursorborder:"",cursorcolor:"#999"});
+     });
+   
+   </script> 
+</body>
+</html>

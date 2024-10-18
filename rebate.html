@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="renderer" content="webkit">
+<title>元宝申请------发返利</title>
+<meta name="keywords" content="">
+<meta name="description" content="">
+<!--全局样式-->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<link href="css/screen.css" rel="stylesheet">
+<!--图标-->
+<link href="css/font-awesome.min.css" rel="stylesheet">
+<!--表单表格-->
+<link href="js/bootstrap-table/bootstrap-table.min.css" rel="stylesheet">
+<link href="css/form.css" rel="stylesheet">
+<!--日期-->
+<link href="js/date/daterangepicker.css" rel="stylesheet">
+<!--mobile 样式-->
+<link href="css/mobile.css" rel="stylesheet">
+<!--[if lt IE 9]>
+<meta http-equiv="refresh" content="0;ie.html" />
+<script src="js/html5shiv.min.js"></script>
+<script src="js/respond.min.js"></script>
+<![endif]-->
+</head>
+<body class="form-body">
+<div class="form-wrapper" style="padding-top: 0">
+	<ul class="list-inline page-tab clearfix">
+    <li><a href="rebateslist.html">返利发放列表</a></li>
+    <li class="cur"><a href="rebate.html">发返利</a></li>
+    <li><a href="releaserecords.html">内部账号(发放记录)</a></li>
+    <li><a href="applyforgold.html">内部账号(元宝申请)</a></li>
+</ul>
+<div class="form-item">
+<p class="popover-options">
+	<a href="#" type="button" data-placement="bottom" data-trigger="hover" 
+	   data-container="body" data-toggle="popover" data-content="
+		<p><em>刷新时间：</em>实时</p>
+		<p><em>付费ARPU：</em>总付费金额/总付费人数</p>
+		<p><em>付费ARPU：</em>总付费金额/总付费人数</p>
+		<p><em>付费ARPU：</em>总付费金额/总付费人数</p>
+		<p><em>付费ARPU：</em>总付费金额/总付费人数</p>
+		">
+		<i class="fa fa-question-circle" aria-hidden="true"></i>
+	</a>
+</p>
+<div class="form-main">
+<div class="form-inline"> 
+	<div class="form-group">
+		 <label class="control-label">平台：</label>
+		 <select class="form-control">
+		 	<option value=""></option>
+		 </select>
+	</div>
+	<div class="form-group">
+		 <label class="control-label">区服：</label>
+		 <select class="form-control">
+		 	<option value=""></option>
+		 </select>
+	</div>
+	<div class="form-group">
+		 <label class="control-label">角色ID：</label>
+		<input type="text" class="form-control">
+	</div>
+	<div class="form-group">
+		 <label class="control-label">角色名：</label>
+		<input type="text" class="form-control">
+	</div>
+	<button class="btn btn-success m-l" type="button"> 检测</button>	
+</div>
+<div class="form-inline">
+	<div class="form-group detection-result"> 
+		<label class="control-label" style="font-weight: bold;">检测结果：</label>
+		<span>普通用户</span><span>帐号ID：1000001</span><span>角色ID：1000001</span><span>角色名：s1.Jname</span><span>当前元宝：10000</span><span>今日充值：1000</span>
+	</div>
+</div>
+<div class="form-inline">
+	<div class="form-group">
+		 <label class="control-label">元宝申请：</label>
+		<input type="text" class="form-control">
+	</div>
+</div>
+<div class="form-inline">
+	<div class="form-group">
+		 <label class="control-label" style="vertical-align: top;">申请原因：</label>
+		 <textarea class="form-control" style="width: 820px"></textarea>
+	</div>
+</div>
+<button class="btn btn-info btn-lg" type="button"> 确认申请</button>
+</div>
+</div>	
+
+ </div>
+<!-- 全局js -->
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<!-- Bootstrap table -->
+<script src="js/bootstrap-table/bootstrap-table.min.js"></script>
+<script src="js/bootstrap-table/locale/bootstrap-table-zh-CN.min.js"></script>
+<script src="js/table-demo.js"></script>
+<script type="text/javascript">
+$(function () { $(".popover-options a").popover({
+		html : true 
+	});});
+
+</script>
+</body>
+</html>
